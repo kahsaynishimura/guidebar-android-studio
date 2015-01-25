@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- From: file:/Users/karina/GitHub/guidebar-android-studio/Guidebar/app/src/main/res/values/arrays.xml -->
+    <eat-comment/>
+    <string-array name="country_codes">
+        <item>-</item>
+        <item>AR</item>
+        <item>AU</item>
+        <item>BR</item>
+        <item>BG</item>
+        <item>CA</item>
+        <item>CH</item>
+        <item>CN</item>
+        <item>CZ</item>
+        <item>DE</item>
+        <item>DK</item>
+        <item>ES</item>
+        <item>FI</item>
+        <item>FR</item>
+        <item>GB</item>
+        <item>GR</item>
+        <item>HU</item>
+        <item>ID</item>
+        <item>IT</item>
+        <item>JP</item>
+        <item>KR</item>
+        <item>NL</item>
+        <item>PL</item>
+        <item>PT</item>
+        <item>RU</item>
+        <item>SE</item>
+        <item>SK</item>
+        <item>SI</item>
+        <item>TR</item>
+        <item>TW</item>
+        <item>US</item>
+    </string-array>
+    <string-array name="gender_array">
+        <item>Feminino</item>
+        <item>Masculino</item>
+    </string-array>
+    <string-array name="options_array">
+        <item>Todas as festas</item>
+        <item>Minhas festas</item>
+        <item>Favoritos</item>
+        <item>Buscar festas</item>
+        <item>Meus Ingressos</item>
+        <item>Categorias</item>
+        <item>Configurações de Conta</item>
+        <item>Sair</item>
+<!--         <item>Criar festa</item> -->
+    </string-array>
+    <string-array name="preferences_front_light_options">
+        <item>@string/preferences_front_light_on</item>
+        <item>@string/preferences_front_light_auto</item>
+        <item>@string/preferences_front_light_off</item>
+    </string-array>
+    <string-array name="preferences_front_light_values">
+        <item>ON</item>
+        <item>AUTO</item>
+        <item>OFF</item>
+    </string-array>
+    <!-- From: file:/Users/karina/GitHub/guidebar-android-studio/Guidebar/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="black">#000</color>
+    <color name="button_selected_dark_grey">#848585</color>
+    <!-- From: file:/Users/karina/GitHub/guidebar-android-studio/Guidebar/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/common_colors.xml -->
+    <eat-comment/>
+    <color name="common_action_bar_splitter">#d2d2d2</color>
+    <color name="common_signin_btn_dark_text_default">@android:color/white</color>
+    <color name="common_signin_btn_dark_text_disabled">#FFAAAAAA</color>
+    <color name="common_signin_btn_dark_text_focused">@android:color/white</color>
+    <color name="common_signin_btn_dark_text_pressed">@android:color/white</color>
+    <color name="common_signin_btn_default_background">#FFDD4B39</color>
+    <color name="common_signin_btn_light_text_default">#FF737373</color>
+    <color name="common_signin_btn_light_text_disabled">#FFAAAAAA</color>
+    <color name="common_signin_btn_light_text_focused">#FF737373</color>
+    <color name="common_signin_btn_light_text_pressed">@android:color/white</color>
+    <!-- From: file:/Users/karina/GitHub/guidebar-android-studio/Guidebar/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="contents_text">#ff000000</color>
+    <color name="darker_grey">#7d7e7e</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="guidebar_background">#dc1c4f</color>
+    <color name="guidebar_site">#d31e4a</color>
+    <color name="light_grey">#e6e7e7</color>
+    <color name="possible_result_points">#c0ffbd21</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color>
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <!-- From: file:/Users/karina/GitHub/guidebar-android-studio/Guidebar/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/wallet_colors.xml -->
+    <eat-comment/>
+    <color name="wallet_bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="wallet_bright_foreground_holo_dark">#fff3f3f3</color>
+    <color name="wallet_bright_foreground_holo_light">#ff000000</color>
+    <color name="wallet_dim_foreground_disabled_holo_dark">#80bebebe</color>
+    <color name="wallet_dim_foreground_holo_dark">#bebebe</color>
+    <color name="wallet_dim_foreground_inverse_disabled_holo_dark">#80323232</color>
+    <color name="wallet_dim_foreground_inverse_holo_dark">#323232</color>
+    <color name="wallet_highlighted_text_holo_dark">#6633b5e5</color>
+    <color name="wallet_highlighted_text_holo_light">#6633b5e5</color>
+    <color name="wallet_hint_foreground_holo_dark">#808080</color>
+    <color name="wallet_hint_foreground_holo_light">#808080</color>
+    <color name="wallet_holo_blue_light">#ff33b5e5</color>
+    <color name="wallet_link_text_light">#0000ee</color>
+    <!-- From: file:/Users/karina/GitHub/guidebar-android-studio/Guidebar/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="white">#fff</color>
+    <declare-styleable name="AdsAttrs"><attr format="string" name="adSize"/><attr format="string" name="adSizes"/><attr format="string" name="adUnitId"/></declare-styleable>
+    <declare-styleable name="LoadingImageView"><attr format="enum" name="imageAspectRatioAdjust"><enum name="none" value="0"/><enum name="adjust_width" value="1"/><enum name="adjust_height" value="2"/></attr><attr format="float" name="imageAspectRatio"/><attr format="boolean" name="circleCrop"/></declare-styleable>
+    <declare-styleable name="MapAttrs"><attr format="enum" name="mapType"><enum name="none" value="0"/><enum name="normal" value="1"/><enum name="satellite" value="2"/><enum name="terrain" value="3"/><enum name="hybrid" value="4"/></attr><attr format="float" name="cameraBearing"/><attr format="float" name="cameraTargetLat"/><attr format="float" name="cameraTargetLng"/><attr format="float" name="cameraTilt"/><attr format="float" name="cameraZoom"/><attr format="boolean" name="liteMode"/><attr format="boolean" name="uiCompass"/><attr format="boolean" name="uiRotateGestures"/><attr format="boolean" name="uiScrollGestures"/><attr format="boolean" name="uiTiltGestures"/><attr format="boolean" name="uiZoomControls"/><attr format="boolean" name="uiZoomGestures"/><attr format="boolean" name="useViewLifecycle"/><attr format="boolean" name="zOrderOnTop"/><attr format="boolean" name="uiMapToolbar"/></declare-styleable>
+    <declare-styleable name="WalletFragmentOptions"><attr format="enum" name="appTheme"><enum name="holo_dark" value="0"/><enum name="holo_light" value="1"/></attr><attr format="enum" name="environment"><enum name="production" value="1"/><enum name="sandbox" value="0"/><enum name="strict_sandbox" value="2"/></attr><attr format="reference" name="fragmentStyle"/><attr format="enum" name="fragmentMode"><enum name="buyButton" value="1"/><enum name="selectionDetails" value="2"/></attr></declare-styleable>
+    <declare-styleable name="WalletFragmentStyle"><attr format="dimension" name="buyButtonHeight"><enum name="match_parent" value="-1"/><enum name="wrap_content" value="-2"/></attr><attr format="dimension" name="buyButtonWidth"><enum name="match_parent" value="-1"/><enum name="wrap_content" value="-2"/></attr><attr format="enum" name="buyButtonText"><enum name="buy_with_google" value="1"/><enum name="buy_now" value="2"/><enum name="book_now" value="3"/><enum name="donate_with_google" value="4"/></attr><attr format="enum" name="buyButtonAppearance"><enum name="classic" value="1"/><enum name="grayscale" value="2"/><enum name="monochrome" value="3"/></attr><attr format="reference" name="maskedWalletDetailsTextAppearance"/><attr format="reference" name="maskedWalletDetailsHeaderTextAppearance"/><attr format="reference|color" name="maskedWalletDetailsBackground"/><attr format="reference" name="maskedWalletDetailsButtonTextAppearance"/><attr format="reference|color" name="maskedWalletDetailsButtonBackground"/><attr format="color" name="maskedWalletDetailsLogoTextColor"/><attr format="enum" name="maskedWalletDetailsLogoImageType"><enum name="classic" value="1"/><enum name="monochrome" value="2"/></attr></declare-styleable>
+    <!-- From: file:/Users/karina/GitHub/guidebar-android-studio/Guidebar/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="half_padding">4dip</dimen>
+    <dimen name="list_item_horiz_margin">16dp</dimen>
+    <dimen name="list_item_vert_margin">8dp</dimen>
+    <dimen name="photo_height">200dp</dimen>
+    <dimen name="standard_padding">8dip</dimen>
+    <dimen name="thumbnail_height">48dp</dimen>
+    <dimen name="thumbnail_width">80dp</dimen>
+    <!-- From: file:/Users/karina/GitHub/guidebar-android-studio/Guidebar/app/src/main/res/values/ids.xml -->
+    <eat-comment/>
+    <item name="decode" type="id"/>
+    <item name="decode_failed" type="id"/>
+    <item name="decode_succeeded" type="id"/>
+    <item name="launch_product_query" type="id"/>
+    <item name="quit" type="id"/>
+    <item name="restart_preview" type="id"/>
+    <item name="return_scan_result" type="id"/>
+    <!-- From: file:/Users/karina/GitHub/guidebar-android-studio/Guidebar/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/version.xml -->
+    <eat-comment/>
+    <integer name="google_play_services_version">6587000</integer>
+    <!-- From: file:/Users/karina/GitHub/guidebar-android-studio/Guidebar/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/admob_strings.xml -->
+    <eat-comment/>
+    <string name="accept">Accept</string>
+    <!-- From: file:/Users/karina/GitHub/guidebar-android-studio/Guidebar/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="action_add_image">Adicionar</string>
+    <string name="action_add_ticket">Adicionar</string>
+    <string name="action_buy">Comprar</string>
+    <string name="action_buy_tiket">Comprar Ingresso</string>
+    <string name="action_cancel_participation">Cancelar Participação</string>
+    <string name="action_choose_image">Escolher imagem</string>
+    <string name="action_comment">Comentar</string>
+    <string name="action_concluir">Concluir</string>
+    <string name="action_create_new_party">Criar nova festa</string>
+    <string name="action_deactivate">Desativar</string>
+    <string name="action_denunciate">Denunciar</string>
+    <string name="action_drawer_close">Fechar menu lateral</string>
+    <string name="action_drawer_open">Abrir menu lateral</string>
+    <string name="action_edit_user">Editar Perfil</string>
+    <string name="action_evaluate">Sua avaliação</string>
+    <string name="action_get_position">Selecionar local</string>
+    <string name="action_hide">Menos</string>
+    <string name="action_join">Participar</string>
+    <string name="action_jump">Pular esta etapa</string>
+    <string name="action_list_attendees">Participantes</string>
+    <string name="action_list_comments">Comentários</string>
+    <string name="action_list_event">Festas</string>
+    <string name="action_mark_as_favorite">Marcar como favorito</string>
+    <string name="action_next">Próximo</string>
+    <string name="action_read_code">Ler Código</string>
+    <string name="action_recover_pass">Recuperar senha</string>
+    <string name="action_register">Cadastre-se</string>
+    <string name="action_remove_from_favorite">Remover dos favoritos</string>
+    <string name="action_remove_image">Remover</string>
+    <string name="action_route">Rota</string>
+    <string name="action_save">Salvar</string>
+    <string name="action_search">Buscar</string>
+    <string name="action_see_more">Ver mais…</string>
+    <string name="action_send">Enviar</string>
+    <string name="action_settings">Configuracoes</string>
+    <string name="action_share_on_fb">Compartilhar</string>
+    <string name="action_sign_in_short">Entrar</string>
+    <string name="action_stop_validation">Parar Validação</string>
+    <string name="action_validate">Validar</string>
+    <string name="action_view_map">Mapa</string>
+    <string name="action_view_products">Ver produtos</string>
+    <string name="action_view_user">Ver Perfil</string>
+    <string name="app_id">402213736551577</string>
+    <string name="app_label">GuideBar</string>
+    <string name="app_name">GuideBar</string>
+    <string name="app_picker_name">Aplicações</string>
+    <string name="bookmark_picker_name">Favoritos</string>
+    <string name="button_add_calendar">Adicionar ao calendário</string>
+    <string name="button_add_contact">Adicionar contacto</string>
+    <string name="button_back">Voltar</string>
+    <string name="button_book_search">Procurar livro</string>
+    <string name="button_cancel">Cancelar</string>
+    <string name="button_custom_product_search">Pesquisa Personalizada</string>
+    <string name="button_dial">Marcar número</string>
+    <string name="button_done">Feito</string>
+    <string name="button_email">Enviar e-mail</string>
+    <string name="button_get_directions">Obter direcções</string>
+    <string name="button_google_shopper">Shopper</string>
+    <string name="button_mms">Enviar MMS</string>
+    <string name="button_ok">OK</string>
+    <string name="button_open_browser">Abrir navegador</string>
+    <string name="button_product_search">Procurar produto</string>
+    <string name="button_search_book_contents">Pesquisar conteúdos</string>
+    <string name="button_share_app">Aplicação</string>
+    <string name="button_share_bookmark">Favorito</string>
+    <string name="button_share_by_email">Partilhar via e-mail</string>
+    <string name="button_share_by_sms">Partilhar via SMS</string>
+    <string name="button_share_clipboard">Área de transferência</string>
+    <string name="button_share_contact">Contacto</string>
+    <string name="button_show_map">Visualizar mapa</string>
+    <string name="button_sms">Enviar SMS</string>
+    <string name="button_web_search">Pesquisa na Web</string>
+    <string name="button_wifi">Conectar à rede</string>
+    <!-- From: file:/Users/karina/GitHub/guidebar-android-studio/Guidebar/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/common_strings.xml -->
+    <eat-comment/>
+    <string name="common_android_wear_notification_needs_update_text">An application requires an update to the Android Wear app.</string>
+    <string name="common_android_wear_update_text">This app won\'t run unless you update the Android Wear app.</string>
+    <string msgid="6006316683626838685" name="common_android_wear_update_title">Update Android Wear</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable Google Play services</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">This app won\'t work unless you enable Google Play services.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Enable Google Play services</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Requested by <ns1:g id="app_name">%1$s</ns1:g></string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Get Google Play services</string>
+    <string msgid="2122112764540849864" name="common_google_play_services_install_text_phone">This app won\'t run without Google Play services, which are missing from your phone.</string>
+    <string msgid="7351599665250191022" name="common_google_play_services_install_text_tablet">This app won\'t run without Google Play services, which are missing from your tablet.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Get Google Play services</string>
+    <string name="common_google_play_services_invalid_account_text">The specified account does not exist on this device. Please choose a different account.</string>
+    <string name="common_google_play_services_invalid_account_title">Invalid Account</string>
+    <string name="common_google_play_services_needs_enabling_title">An application requires Google Play services to be enabled.</string>
+    <string name="common_google_play_services_network_error_text">A data connection is required to connect to Google Play services.</string>
+    <string name="common_google_play_services_network_error_title">Network Error</string>
+    <string name="common_google_play_services_notification_needs_installation_title">An application requires installation of Google Play services.</string>
+    <string name="common_google_play_services_notification_needs_update_title">An application requires an update for Google Play services.</string>
+    <string name="common_google_play_services_notification_ticker">Google Play services error</string>
+    <string name="common_google_play_services_unknown_issue">Unknown issue with Google Play services.</string>
+    <string name="common_google_play_services_unsupported_text">Google Play services, which some of your applications rely on, is not supported by your device. Please contact the manufacturer for assistance.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play services</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Update</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">This app won\'t run unless you update Google Play services.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Update Google Play services</string>
+    <string name="common_open_on_phone">Open on phone</string>
+    <string name="common_signin_button_text">Sign in</string>
+    <string name="common_signin_button_text_long">Sign in with Google</string>
+    <!-- From: file:/Users/karina/GitHub/guidebar-android-studio/Guidebar/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="confirm_delete_image">Excluir imagem?</string>
+    <string name="confirm_delete_image_msg">Deseja realmente excluir a imagem do álbum?</string>
+    <string name="contents_contact">Informação de contacto</string>
+    <string name="contents_email">Endereço de e-mail</string>
+    <string name="contents_location">Coordenadas geográficas</string>
+    <string name="contents_phone">Número de telefone</string>
+    <string name="contents_sms">Endereço SMS</string>
+    <string name="contents_text">Texto simples</string>
+    <!-- From: file:/Users/karina/GitHub/guidebar-android-studio/Guidebar/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/admob_strings.xml -->
+    <eat-comment/>
+    <string name="create_calendar_message">Allow Ad to create a calendar event?</string>
+    <string name="create_calendar_title">Create calendar event</string>
+    <string name="decline">Decline</string>
+    <!-- From: file:/Users/karina/GitHub/guidebar-android-studio/Guidebar/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="edit_event_view">Edição de festa</string>
+    <string name="email_activate_event_subject">GuideBar - Festa ativada.</string>
+    <string name="email_buy_ticket_subject">GuideBar - Compra de Ingressos</string>
+    <string name="email_confirm_user_subject">GuideBar - Confirmação de cadastro</string>
+    <string name="email_delete_event_subject">GuideBar - Festa desativada.</string>
+    <string name="email_denunciate_subject">GuideBar - Denúncia de festa.</string>
+    <string name="email_edit_event_subject">GuideBar - Alteração de festa.</string>
+    <string name="email_recover_pass_subject">GuideBar - Recuperação de Senha</string>
+    <string name="error_add_ticket">Erro ao adicionar ingresso</string>
+    <string name="error_buy_own_ticket">Não é possível comprar um ingresso de você mesmo</string>
+    <string name="error_buy_ticket">Não foi possível comprar um ingresso.</string>
+    <string name="error_cancel_participation">Não foi possível cancelar sua participação</string>
+    <string name="error_deactivate_event">Apenas o promotor da festa pode realizar esta ação</string>
+    <string name="error_deactivate_ticket">Não foi possível desativar o ingresso</string>
+    <string name="error_decimal_format">Formato incorreto</string>
+    <string name="error_denunciate_event">Não foi possível denunciar este evento.</string>
+    <string name="error_duplicate_email">Este e-mail já está cadastrado.</string>
+    <string name="error_edit_event">Apenas quem criou a festa pode editá-la</string>
+    <string name="error_email_inexistente_ou_invalido">Este e-mail é inválido.</string>
+    <string name="error_empty_list">Não há festas</string>
+    <string name="error_empty_user">E-mail ou senha inválidos</string>
+    <string name="error_evaluate_event">Não foi possível registrar sua avaliação para esta festa.</string>
+    <string name="error_field_required">Campo obrigatório</string>
+    <string name="error_incorrect_password">Senha incorreta</string>
+    <string name="error_invalid_birth_date">Data de nascimento inválida</string>
+    <string name="error_invalid_cep">CEP inválido</string>
+    <string name="error_invalid_city">Cidade inválida</string>
+    <string name="error_invalid_email">E-mail inválido</string>
+    <string name="error_invalid_end_date">A data e hora de término deve ser maior que a de início</string>
+    <string name="error_invalid_event">Esta festa não pôde ser visualizada</string>
+    <string name="error_invalid_password">Senha muito curta</string>
+    <string name="error_invalid_quantity">Informe um valor menor</string>
+    <string name="error_invalid_start_date">A data e hora de início não pode estar no passado</string>
+    <string name="error_invalid_token">Token inválido</string>
+    <string name="error_leave_rss">Erro ao cancelar recebimento de feed</string>
+    <string name="error_list_ticket">Erro ao listar ingressos</string>
+    <string name="error_load_ticket_validation">Este ingresso não foi encontrado</string>
+    <string name="error_max_quantity">A quantidade máxima permitida é 999</string>
+    <string name="error_need_loginfb">É necessário logar com sua conta do Facebook para compartilhar.</string>
+    <string name="error_network_connection">Verifique sua conexão com a internet!</string>
+    <string name="error_no_image">Essa festa ainda não possui uma imagem para excluir</string>
+    <string name="error_no_parties">Nenhuma festa encontrada.</string>
+    <string name="error_not_paid">Esta entrada não está paga</string>
+    <string name="error_number_required">Digite apenas números</string>
+    <string name="error_proxy">Houve um problema na autenticação da rede. [Proxy]</string>
+    <string name="error_remove_image">Erro ao remover a imagem</string>
+    <string name="error_save">Erro ao salvar os dados</string>
+    <string name="error_save_address">Não foi possível salvar o endereço</string>
+    <string name="error_save_comment">Erro ao salvar o comentário</string>
+    <string name="error_save_event">Erro ao salvar sua festa</string>
+    <string name="error_save_participation">Erro ao salvar participação</string>
+    <string name="error_save_rss">Erro ao marcar a festa como favorita</string>
+    <string name="error_send_email_denunciate">Não foi possível enviar um e-mail de denúncia</string>
+    <string name="error_ticket_from_wrong_event">Este ingresso não pertence a este evento.</string>
+    <string name="error_upload_image">Erro ao salvar imagem</string>
+    <string name="error_user_confirmation">Clique no link do e-mail de confirmação para logar no sistema</string>
+    <string name="error_validate_checkin">Erro ao validar a entrada</string>
+    <string name="error_validate_item">Não foi possível validar o item</string>
+    <string name="error_wrong_event">Este ingresso não pertence a esta festa</string>
+    <string name="event_folder_description">Descrição do folder da festa</string>
+    <string name="event_image_instructions">Escolha a imagem de perfil da sua festa. Esta  é a imagem que aparecerá na lista.</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="history_clear_one_history_text">Limpar</string>
+    <string name="history_clear_text">Limpar histórico</string>
+    <string name="history_email_title">Histórico do Barcode Scanner</string>
+    <string name="history_empty">Vazio</string>
+    <string name="history_empty_detail">Não código de barras foram registrados</string>
+    <string name="history_send">Enviar histórico</string>
+    <string name="history_title">Histórico</string>
+    <string name="image_instructions">Escolha sua imagem de Perfil</string>
+    <string name="img_description">imagem</string>
+    <string name="is_active_user">Ativo</string>
+    <string name="lblFrom">De</string>
+    <string name="lblTo">Até</string>
+    <string name="lbl_comment">Comentário</string>
+    <string name="login_progress_signing_in">Entrando…</string>
+    <string name="logo">Logo Guidebar</string>
+    <string name="menu_activate">Ativar</string>
+    <string name="menu_deactivate">Desativar</string>
+    <string name="menu_edit">Editar</string>
+    <string name="menu_encode_mecard">Usar MECARD</string>
+    <string name="menu_encode_vcard">Usar vCard</string>
+    <string name="menu_facebook_comment">Comentários</string>
+    <string name="menu_forgot_password">Recuperar senha</string>
+    <string name="menu_help">Ajuda</string>
+    <string name="menu_history">Histórico</string>
+    <string name="menu_settings">Definições</string>
+    <string name="menu_share">Partilhar</string>
+    <string name="menu_view">Visualizar</string>
+    <string name="msg_bulk_mode_scanned">Modo em massa: código de barras lido e guardado</string>
+    <string name="msg_camera_framework_bug">Desculpe, a câmera do Android encontrou um problema. Poderá precisar de reiniciar o dispositivo.</string>
+    <string name="msg_default_format">Formato</string>
+    <string name="msg_default_meta">Metadata</string>
+    <string name="msg_default_mms_subject">Olá</string>
+    <string name="msg_default_status">Alinhar código de barras com o exemplo para ser lido.</string>
+    <string name="msg_default_time">Tempo</string>
+    <string name="msg_default_type">Tipo</string>
+    <string name="msg_encode_contents_failed">Não foi possível codificar o código de barradas apartir dos dados fornecidos.</string>
+    <string name="msg_google_books">Google Livros</string>
+    <string name="msg_google_product">Google Product Search</string>
+    <string name="msg_google_shopper_missing">Google Shopper não está instalado.</string>
+    <string name="msg_install_google_shopper">Google Shopper combina leituras de códigos de barras com preços online e locais, análises e mais sem abrir o navegador. Gostaria de experimentar?</string>
+    <string name="msg_intent_failed">Desculpe, a aplicação solicitada não pode ser iniciada. O conteúdo do código de barras poderá ser inválido.</string>
+    <string name="msg_redirect">Redirecionar</string>
+    <string name="msg_sbc_book_not_searchable">Desculpe, este livro não é pesquisável.</string>
+    <string name="msg_sbc_failed">Desculpe, foi encontrado um erro na pesquisa.</string>
+    <string name="msg_sbc_no_page_returned">Nenhuma página obtida</string>
+    <string name="msg_sbc_page">Página</string>
+    <string name="msg_sbc_results">Resultados</string>
+    <string name="msg_sbc_searching_book">A procurar livro\u2026</string>
+    <string name="msg_sbc_snippet_unavailable">Trecho não disponível</string>
+    <string name="msg_sbc_unknown_page">Página desconhecida</string>
+    <string name="msg_share_explanation">Pode partilhar dados exibindo um código de barras no seu ecrã e lendo-o com outro telemóvel</string>
+    <string name="msg_share_subject_line">Aqui estão os conteúdos do código de barras lido</string>
+    <string name="msg_share_text">Ou introduza algum texto e pressione Enter</string>
+    <string name="msg_sure">Tem a certeza?</string>
+    <string name="msg_unmount_usb">Desculpe, o cartão SD não está disponível.</string>
+    <string name="new_event_view">Nova festa</string>
+    <string name="no">NÃO</string>
+    <string name="no_events">Nenhuma festa foi encontrada</string>
+    <string name="no_purchases">Você ainda não comprou nenhum ingresso</string>
+    <string name="no_results">Nenhum  resultado encontrado para \"%s\"</string>
+    <string name="preferences_actions_title">Quando o código de barras é encontrado\u2026</string>
+    <string name="preferences_auto_focus_title">Usar foco automático</string>
+    <string name="preferences_bulk_mode_summary">Ler e guardar códigos de barras continuamente</string>
+    <string name="preferences_bulk_mode_title">Modo em massa</string>
+    <string name="preferences_copy_to_clipboard_title">Copiar para a área de transferência</string>
+    <string formatted="false" name="preferences_custom_product_search_summary">Substituições: %s = conteúdos, %f = formato, %t = tipo</string>
+    <string name="preferences_custom_product_search_title">Pesquisa personalizada de URL</string>
+    <string name="preferences_decode_1D_title">Código de barras 1D</string>
+    <string name="preferences_decode_Data_Matrix_title">Data Matrix</string>
+    <string name="preferences_decode_QR_title">QR Codes</string>
+    <string name="preferences_device_bug_workarounds_title">Soluções alternativas de dispositivos com erros</string>
+    <string name="preferences_disable_continuous_focus_summary">Use apenas o modo de focagem padrão</string>
+    <string name="preferences_disable_continuous_focus_title">No foco contínuo</string>
+    <string name="preferences_disable_exposure_title">Nenhuma exposição</string>
+    <string name="preferences_front_light_auto">Automático</string>
+    <string name="preferences_front_light_off">Inativo</string>
+    <string name="preferences_front_light_on">Ativo</string>
+    <string name="preferences_front_light_summary">Melhora a leitura em luz fraca em alguns telefones, mas pode causar clarões. Não disponível em certos dispositivos.</string>
+    <string name="preferences_front_light_title">Usar luz da frente</string>
+    <string name="preferences_general_title">Definições Gerais</string>
+    <string name="preferences_invert_scan_summary">Procurar por códigos de barras brancos em fundo preto. Não disponível em certos dispositivos.</string>
+    <string name="preferences_invert_scan_title">Inverter leitura</string>
+    <string name="preferences_name">Definições</string>
+    <string name="preferences_play_beep_title">Apitar</string>
+    <string name="preferences_remember_duplicates_summary">Guardar pesquisas múltiplas do mesmo código de barras no histórico</string>
+    <string name="preferences_remember_duplicates_title">Lembrar duplicados</string>
+    <string name="preferences_result_title">Definições do resultado</string>
+    <string name="preferences_scanning_title">Quando procurar por códigos de barras, descodificar\u2026</string>
+    <string name="preferences_search_country">País busca</string>
+    <string name="preferences_supplemental_summary">Tentar recuperar mais informação sobre os conteúdos dos códigos de barras</string>
+    <string name="preferences_supplemental_title">Recuperar mais informação</string>
+    <string name="preferences_try_bsplus">Tente Barcode Scanner+</string>
+    <string name="preferences_try_bsplus_summary">Aprimorado com novos recursos e interface</string>
+    <string name="preferences_vibrate_title">Vibrar</string>
+    <string name="product_folder_description">Imagem do produto</string>
+    <string name="progress_loading_cities">Carregando cidades</string>
+    <string name="progress_loading_data">Carregando dados</string>
+    <string name="progress_saving_data">Salvando os dados</string>
+    <string name="prompt_address">Endereço</string>
+    <string name="prompt_age">Idade</string>
+    <string name="prompt_all_cities">Todas as cidades</string>
+    <string name="prompt_bairro">Bairro</string>
+    <string name="prompt_birth_date">Data de Nascimento</string>
+    <string name="prompt_category">Categoria</string>
+    <string name="prompt_cep">CEP</string>
+    <string name="prompt_city">Cidade</string>
+    <string name="prompt_comment">Digite seu Comentário</string>
+    <string name="prompt_complemento">Complemento</string>
+    <string name="prompt_date">Data</string>
+    <string name="prompt_description">Descrição</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_email_pagseguro">E-mail do PagSeguro</string>
+    <string name="prompt_email_pagseguro_instructions">Informe seu e-mail do PagSeguro (Se não for o mesmo e-mail do PagSeguro não será possível realizar o pagamento do ingresso):</string>
+    <string name="prompt_end_date">Data Final</string>
+    <string name="prompt_gender">Sexo</string>
+    <string name="prompt_has_tickets">Deseja vender ingressos?</string>
+    <string name="prompt_invitation_permission">Permissão para convite</string>
+    <string name="prompt_max_quantity">Quantidade Máxima</string>
+    <string name="prompt_min_age">Idade mínima</string>
+    <string name="prompt_name">Nome</string>
+    <string name="prompt_num_views">Visualizações</string>
+    <string name="prompt_number">Número</string>
+    <string name="prompt_only_open_bar">Somente open bar</string>
+    <string name="prompt_open_bar">Open bar</string>
+    <string name="prompt_password">Senha</string>
+    <string name="prompt_promoter">Promotor</string>
+    <string name="prompt_quantity">Quantidade</string>
+    <string name="prompt_select_ticket">Selecione o ingresso que deseja comprar</string>
+    <string name="prompt_start_date">Data Inicial</string>
+    <string name="prompt_state">Estado</string>
+    <string name="prompt_street">Rua</string>
+    <string name="prompt_ticket_description">Descrição</string>
+    <string name="prompt_ticket_value">Valor</string>
+    <string name="prompt_tickets">Ingressos</string>
+    <string name="prompt_token_pagseguro">Token do PagSeguro</string>
+    <string name="prompt_url_maps">Local</string>
+    <string name="prompt_url_payment">URL para pagamento:</string>
+    <string name="prompt_validate_quantity">Quantos ingressos deseja validar?</string>
+    <string name="prompt_valor">Valor</string>
+    <string name="prompt_visibility">Visibilidade</string>
+    <string name="result_address_book">Info de contacto encontrada</string>
+    <string name="result_calendar">Evento de calendário encontrado</string>
+    <string name="result_email_address">Endereço de e-mail encontrado</string>
+    <string name="result_geo">Coordenadas geográficas encontradas</string>
+    <string name="result_isbn">Livro encontrado</string>
+    <string name="result_product">Produto encontrado</string>
+    <string name="result_sms">Endereço SMS encontrado</string>
+    <string name="result_tel">Número de telefone encontrado</string>
+    <string name="result_text">Texto simples encontrado</string>
+    <string name="result_uri">URL encontrado</string>
+    <string name="result_wifi">Configuração WLAN encontrados</string>
+    <string name="sbc_name">Pesquisa Google Book</string>
+    <string name="search_hint">Buscar festas</string>
+    <string name="settings_description">Detalhes da festa</string>
+    <!-- From: file:/Users/karina/GitHub/guidebar-android-studio/Guidebar/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/admob_strings.xml -->
+    <eat-comment/>
+    <string name="store_picture_message">"Allow Ad to store image in Picture gallery?"</string>
+    <string name="store_picture_title">Save image</string>
+    <!-- From: file:/Users/karina/GitHub/guidebar-android-studio/Guidebar/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="succes_validate_ticket">Entrada validada</string>
+    <string name="success_activate_event">A festa foi ativada</string>
+    <string name="success_add_ticket">Ingresso adicionado com sucesso</string>
+    <string name="success_cancel_participation">Participação cancelada com sucesso</string>
+    <string name="success_deactivate_event">A festa foi desativada</string>
+    <string name="success_deactivate_ticket">O ingresso foi desativado</string>
+    <string name="success_denunciate_event">Festa denunciada com sucesso</string>
+    <string name="success_evaluate_event">Avaliação salva com sucesso</string>
+    <string name="success_leave_participation">Você não está mais participando desta festa</string>
+    <string name="success_leave_rss">Este evento foi removido dos seus favoritos.</string>
+    <string name="success_recover_pass_email">E-mail enviado. Acesse sua caixa de entrada.</string>
+    <string name="success_remove_image">Imagem removida</string>
+    <string name="success_save_event">a festa foi salva</string>
+    <string name="success_save_participation">Participação salva</string>
+    <string name="success_save_purchase">Acesse o menu "Meus ingressos" para realizar o pagamento.</string>
+    <string name="success_save_rss">Este evento foi adicionado aos seus favoritos.</string>
+    <string name="success_save_user">Cadastro concluído. Acesse seu e-mail para confirmar o cadastro.</string>
+    <string name="success_send_email_denunciate">Um e-mail foi enviado aos administradores e ao promotor da festa</string>
+    <string name="success_upload_image">Imagem enviada</string>
+    <string name="success_validate_item">Item validado com sucesso</string>
+    <string name="tap_instructions">Pressione e segure na posição do mapa onde acontecerá sua festa. Esta posição será utilizada para calcular a rota.</string>
+    <string name="title_activity_add_address">Endereço da festa</string>
+    <string name="title_activity_add_image">Imagens da festa</string>
+    <string name="title_activity_add_tickets">Adicionar ingressos</string>
+    <string name="title_activity_comments">Comentários</string>
+    <string name="title_activity_deactivate_ticket">Desativar Ingresso</string>
+    <string name="title_activity_detail">Carregar detalhes</string>
+    <string name="title_activity_edit_event">Editar Festa</string>
+    <string name="title_activity_edit_user">Editar Usuário</string>
+    <string name="title_activity_event_position">Posição do Evento</string>
+    <string name="title_activity_filters">Filtros da Busca</string>
+    <string name="title_activity_list_attendees">Participantes</string>
+    <string name="title_activity_list_categories">Categorias</string>
+    <string name="title_activity_list_comments">Comentários</string>
+    <string name="title_activity_list_purchases">Meus ingressos</string>
+    <string name="title_activity_location">Localização</string>
+    <string name="title_activity_login">Entrar</string>
+    <string name="title_activity_main">GuideBar</string>
+    <string name="title_activity_maps">Mapa</string>
+    <string name="title_activity_new_comment">Novo Comentário</string>
+    <string name="title_activity_new_event">Nova festa</string>
+    <string name="title_activity_new_event_flow">Nova festa</string>
+    <string name="title_activity_new_user">Novo Usuário</string>
+    <string name="title_activity_presentation">Guidebar</string>
+    <string name="title_activity_recover_pass">Recuperação de senha</string>
+    <string name="title_activity_search_event">Buscar Festa</string>
+    <string name="title_activity_ticket">Comprar Ingresso</string>
+    <string name="title_activity_upload_to_server">Imagem do perfil</string>
+    <string name="title_activity_upload_to_server_event">Imagem da festa</string>
+    <string name="title_activity_validate_check_in">Validar Entrada</string>
+    <string name="title_activity_view_event">Detalhes da festa</string>
+    <string name="title_activity_view_purchase">Meus Ingressos</string>
+    <string name="title_activity_view_user">Perfil do Usuário</string>
+    <string name="user_folder_description">Imagem de perfil do usuário</string>
+    <string name="user_profile_view">Perfil de usuário</string>
+    <!-- From: file:/Users/karina/GitHub/guidebar-android-studio/Guidebar/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/wallet_strings.xml -->
+    <eat-comment/>
+    <string name="wallet_buy_button_place_holder" translation_description="Text on a button that allows a user to make a payment with Google Wallet [CHAR LIMIT=30]">Buy with Google</string>
+    <!-- From: file:/Users/karina/GitHub/guidebar-android-studio/Guidebar/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="welcome_message">Bem vindo ao GuideBar!</string>
+    <string name="wifi_changing_network">Solicitando ligação à rede\u2026</string>
+    <string name="wifi_ssid_label">Nome da Rede</string>
+    <string name="wifi_type_label">Tipo</string>
+    <string name="yes">SIM</string>
+    <!-- From: file:/Users/karina/GitHub/guidebar-android-studio/Guidebar/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <!-- From: file:/Users/karina/GitHub/guidebar-android-studio/Guidebar/app/src/main/res/values/themes.xml -->
+    <eat-comment/>
+    <style name="CaptureTheme" parent="android:Theme.Holo">
+    <item name="android:windowFullscreen">true</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowActionBarOverlay">true</item>
+    <item name="android:windowActionModeOverlay">true</item>
+  </style>
+    <!-- From: file:/Users/karina/GitHub/guidebar-android-studio/Guidebar/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="LoginFormContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+    </style>
+    <!-- From: file:/Users/karina/GitHub/guidebar-android-studio/Guidebar/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/admob_iap_style.xml -->
+    <eat-comment/>
+    <style name="Theme.IAPTheme" parent="android:Theme">
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:backgroundDimEnabled">false</item>
+  </style>
+    <!-- From: file:/Users/karina/GitHub/guidebar-android-studio/Guidebar/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/wallet_styles.xml -->
+    <eat-comment/>
+    <style name="WalletFragmentDefaultButtonTextAppearance">
+        <item name="android:textColor">@color/wallet_primary_text_holo_light</item>
+        <item name="android:textColorHighlight">@color/wallet_highlighted_text_holo_light</item>
+        <item name="android:textColorHint">@color/wallet_hint_foreground_holo_light</item>
+        <item name="android:textColorLink">@color/wallet_link_text_light</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="WalletFragmentDefaultDetailsHeaderTextAppearance" parent="WalletFragmentDefaultDetailsTextAppearance">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="WalletFragmentDefaultDetailsTextAppearance">
+        <item name="android:textColor">@color/wallet_secondary_text_holo_dark</item>
+        <item name="android:textColorHighlight">@color/wallet_highlighted_text_holo_dark</item>
+        <item name="android:textColorHint">@color/wallet_hint_foreground_holo_dark</item>
+        <item name="android:textColorLink">@color/wallet_holo_blue_light</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="WalletFragmentDefaultStyle">
+        <item name="buyButtonHeight">48dp</item>
+        <item name="buyButtonWidth">match_parent</item>
+        <item name="buyButtonText">buy_with_google</item>
+        <item name="buyButtonAppearance">classic</item>
+        <item name="maskedWalletDetailsTextAppearance">@style/WalletFragmentDefaultDetailsTextAppearance</item>
+        <item name="maskedWalletDetailsHeaderTextAppearance">@style/WalletFragmentDefaultDetailsHeaderTextAppearance</item>
+        <item name="maskedWalletDetailsBackground">@color/wallet_bright_foreground_holo_light</item>
+        <item name="maskedWalletDetailsButtonBackground">@android:drawable/btn_default</item>
+        <item name="maskedWalletDetailsButtonTextAppearance">@style/WalletFragmentDefaultButtonTextAppearance</item>
+        <item name="maskedWalletDetailsLogoTextColor">@color/wallet_bright_foreground_holo_dark</item>
+        <item name="maskedWalletDetailsLogoImageType">classic</item>
+    </style>
+    <!-- From: file:/Users/karina/GitHub/guidebar-android-studio/Guidebar/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="guideBarSpinner" parent="android:style/Widget.Holo.Spinner">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:popupBackground">#FFF</item>
+    </style>
+    <style name="loginEditText" parent="android:style/Widget.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+</resources>

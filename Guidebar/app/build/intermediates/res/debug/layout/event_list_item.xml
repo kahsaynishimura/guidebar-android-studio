@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/list_item_vert_margin"
+    android:background="#fff"
+    android:longClickable="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/list_item_vert_margin"
+        android:layout_marginRight="@dimen/list_item_horiz_margin"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/list_item_vert_margin"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="@dimen/list_item_vert_margin" >
+
+            <ImageView
+                android:id="@+id/imgEventFolder"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/event_folder_description"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="@dimen/list_item_horiz_margin"
+            android:background="@drawable/border"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp" >
+
+            <TextView
+                android:id="@+id/lblEventName"
+                style="?android:textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-condensed"
+                android:lineSpacingMultiplier="0.85"
+                android:maxLines="1"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/prompt_name"
+                android:textColor="#c000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblEventDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="@string/prompt_description"
+                android:textColor="#6000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/lblEventDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="@string/prompt_description"
+                android:textColor="#6000"
+                android:textSize="12sp" />
+
+            <RatingBar
+                android:id="@+id/rtbEvaluation"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:isIndicator="true"
+                android:progressDrawable="@drawable/custom_ratingbar_small" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginBottom="@dimen/list_item_vert_margin" -->
+    <!-- android:layout_marginRight="@dimen/list_item_horiz_margin" -->
+    <!-- android:layout_marginTop="0dp" -->
+    <!-- android:orientation="vertical" -->
+    <!-- android:paddingLeft="5dp" > -->
+
+
+    <!-- <Button -->
+    <!-- android:id="@+id/btnBuyTicket" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="25dp" -->
+    <!-- android:layout_gravity="end" -->
+    <!-- android:background="@drawable/white_on_click" -->
+    <!-- android:paddingLeft="5dp" -->
+    <!-- android:paddingRight="5dp" -->
+    <!-- android:text="@string/action_buy" -->
+    <!-- android:textAllCaps="true" -->
+    <!-- android:textColor="#fff" /> -->
+    <!-- </LinearLayout> -->
+
+</LinearLayout><!-- From: file:/Users/karina/GitHub/guidebar-android-studio/Guidebar/app/src/main/res/layout/event_list_item.xml -->

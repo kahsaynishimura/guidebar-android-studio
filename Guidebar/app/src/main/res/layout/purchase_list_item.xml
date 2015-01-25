@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/list_item_vert_margin"
+    android:layout_marginLeft="@dimen/list_item_horiz_margin"
+    android:layout_marginRight="@dimen/list_item_horiz_margin"
+    android:layout_marginTop="@dimen/list_item_vert_margin"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtEventName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/list_item_horiz_margin"
+        android:layout_marginRight="@dimen/list_item_horiz_margin"
+        android:layout_marginTop="@dimen/list_item_vert_margin"
+        android:maxLines="2"
+        android:textAllCaps="true"
+        android:textIsSelectable="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/list_item_horiz_margin"
+        android:layout_marginRight="@dimen/list_item_horiz_margin"
+        android:layout_marginTop="@dimen/list_item_vert_margin"
+        android:maxLines="2"
+        android:textAllCaps="true"
+        android:textIsSelectable="true"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/form_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/txtTicketValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/list_item_horiz_margin"
+            android:layout_marginRight="@dimen/list_item_horiz_margin"
+            android:textIsSelectable="true"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/list_item_horiz_margin"
+            android:layout_marginRight="@dimen/list_item_horiz_margin"
+            android:textIsSelectable="true"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/lblUrlPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/list_item_vert_margin"
+            android:layout_marginLeft="@dimen/list_item_horiz_margin"
+            android:layout_marginRight="@dimen/list_item_horiz_margin"
+            android:clickable="true"
+            android:text="@string/prompt_url_payment"
+            android:textIsSelectable="true"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtUrlPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/list_item_horiz_margin"
+            android:layout_marginRight="@dimen/list_item_horiz_margin"
+            android:clickable="true"
+            android:textIsSelectable="true"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/lblStatusPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/list_item_vert_margin"
+            android:layout_marginLeft="@dimen/list_item_horiz_margin"
+            android:layout_marginRight="@dimen/list_item_horiz_margin"
+            android:clickable="true"
+            android:textIsSelectable="true"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imgQRCode"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/product_folder_description"
+            android:src="@drawable/icon" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSeeMore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/action_see_more" />
+
+</LinearLayout>

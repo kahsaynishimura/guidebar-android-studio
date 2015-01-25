@@ -1,0 +1,92 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".UploadToServerEventActivity" >
+
+    <!-- Upload Event progress -->
+
+    <LinearLayout
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/status_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/progress_saving_data"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <!-- Upload Event form -->
+
+    <LinearLayout
+        android:id="@+id/upload_event_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/guidebar_background"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imgCamera"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:contentDescription="@string/user_folder_description"
+            android:scaleType="centerCrop"
+            android:src="@drawable/camera" />
+
+        <TextView
+            android:id="@+id/txtUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/list_item_vert_margin"
+            android:layout_marginRight="@dimen/list_item_vert_margin"
+            android:layout_marginTop="30dp"
+            android:text="@string/event_image_instructions"
+            android:textColor="@color/white" >
+        </TextView>
+
+        <Button
+            android:id="@+id/btnAddImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/generic_buton"
+            android:onClick="openChooser"
+            android:text="@string/action_add_image" />
+
+        <Button
+            android:id="@+id/btnDeleteImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/generic_buton"
+            android:onClick="removeImage"
+            android:text="@string/action_remove_image" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/generic_buton"
+            android:onClick="next"
+            android:text="@string/action_next" />
+    </LinearLayout>
+
+</merge>

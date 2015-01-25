@@ -1,0 +1,71 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".AddImageActivity" >
+
+    <!-- Add Images progress -->
+
+    <LinearLayout
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/status_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/progress_saving_data"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <!-- Add Images form -->
+
+    <LinearLayout
+        android:id="@+id/add_images_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnAddImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/generic_buton"
+            android:onClick="openChooser"
+            android:text="@string/action_add_image" />
+
+        <Button
+            android:id="@+id/btnConcluir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/generic_buton"
+            android:onClick="concluir"
+            android:text="@string/action_concluir" />
+
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnWidth="90dp"
+            android:gravity="center"
+            android:horizontalSpacing="10dp"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp" >
+        </GridView>
+    </LinearLayout>
+
+</merge>

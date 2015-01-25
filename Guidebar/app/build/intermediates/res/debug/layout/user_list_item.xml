@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/imgUserProfile"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_marginTop="@dimen/list_item_vert_margin"
+        android:contentDescription="@string/user_folder_description"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/list_item_horiz_margin"
+        android:layout_marginTop="@dimen/list_item_vert_margin"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/lblUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/prompt_name"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Users/karina/GitHub/guidebar-android-studio/Guidebar/app/src/main/res/layout/user_list_item.xml -->

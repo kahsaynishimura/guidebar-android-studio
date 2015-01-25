@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:drawable="@color/darker_grey" android:state_pressed="true"/>
+    <item android:drawable="@color/light_grey" android:state_pressed="false"/>
+    
+
+</selector>
+<!-- From: file:/Users/karina/GitHub/guidebar-android-studio/Guidebar/app/src/main/res/drawable/category_click.xml -->

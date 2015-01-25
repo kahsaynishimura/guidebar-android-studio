@@ -1,0 +1,204 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ViewEventActivity" >
+
+    <!-- View Event progress -->
+
+    <LinearLayout
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/status_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/progress_saving_data"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <!-- View Event form -->
+
+    <LinearLayout
+        android:id="@+id/view_event_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/list_item_vert_margin"
+            android:background="#fff"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/list_item_vert_margin"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="@dimen/list_item_vert_margin" >
+
+                    <ImageView
+                        android:id="@+id/imgEventFolder"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:contentDescription="@string/event_folder_description"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="@dimen/list_item_horiz_margin"
+                    android:background="@drawable/border"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp" >
+
+                    <TextView
+                        android:id="@+id/txtName"
+                        style="?android:textAppearanceMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:ellipsize="end"
+                        android:fontFamily="sans-serif-condensed"
+                        android:lineSpacingMultiplier="0.85"
+                        android:maxLines="2"
+                        android:paddingBottom="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/prompt_name"
+                        android:textColor="#c000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/lblCategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="@string/prompt_date"
+                        android:textColor="#6000"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/lblEventDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="@string/prompt_date"
+                        android:textColor="#6000"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:orientation="horizontal" >
+
+                        <RatingBar
+                            android:id="@+id/rtbEvaluation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:isIndicator="true"
+                            android:progressDrawable="@drawable/custom_ratingbar_small" />
+
+                        <Button
+                            android:id="@+id/btnShareOnFB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:background="@drawable/facebook_share"
+                            android:onClick="shareOnFB"
+                            
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/action_share_on_fb"
+                            android:textAllCaps="true"
+                            android:textColor="#fff"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/tab_background"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnDescripion"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border"
+                android:onClick="loadTabDescription"
+                android:text="@string/prompt_description"
+                android:textSize="16sp" />
+
+
+            <Button
+                android:id="@+id/btnViewAttendees"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:background="#fff"
+                android:onClick="loadTabAttendees"
+                android:text="@string/action_list_attendees"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_event_form_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/list_item_horiz_margin"
+            android:layout_marginRight="@dimen/list_item_horiz_margin"
+            android:orientation="vertical" >
+
+            <fragment
+                android:id="@+id/descriptionFragment"
+                android:name="br.com.guidebar.fragments.TabDescription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+            <fragment
+                android:id="@+id/attendeesFragment"
+                android:name="br.com.guidebar.fragments.TabAttendees"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+</merge><!-- From: file:/Users/karina/GitHub/guidebar-android-studio/Guidebar/app/src/main/res/layout/activity_view_event.xml -->

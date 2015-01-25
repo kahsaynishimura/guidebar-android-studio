@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.guidebar"
+    android:versionCode="261"
+    android:versionName="2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="br.com.guidebar.activities.LoginActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="br.com.guidebar.activities.ListEventsActivity"
+            android:configChanges="orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.com.guidebar.activities.EditEventActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_edit_event"
+            android:parentActivityName="br.com.guidebar.activities.ListEventsActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.guidebar.activities.ListEventsActivity" />
+        </activity>
+        <activity
+            android:name="br.com.guidebar.activities.ViewEventActivity"
+            android:configChanges="orientation"
+            android:parentActivityName="br.com.guidebar.activities.ListEventsActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.guidebar.activities.ListEventsActivity" />
+        </activity>
+        <activity
+            android:name="br.com.guidebar.activities.NewEventActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_new_event"
+            android:parentActivityName="br.com.guidebar.activities.ListEventsActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.guidebar.activities.ListEventsActivity" />
+        </activity>
+        <activity
+            android:name="br.com.guidebar.activities.NewUserActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_new_user"
+            android:parentActivityName="br.com.guidebar.activities.LoginActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.guidebar.activities.LoginActivity" />
+        </activity>
+        <activity
+            android:name="br.com.guidebar.activities.EditUserActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_edit_user"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="br.com.guidebar.activities.UploadToServerActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_upload_to_server"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="br.com.guidebar.activities.UploadToServerEventActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_upload_to_server_event"
+            android:parentActivityName="br.com.guidebar.activities.NewEventActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.guidebar.activities.NewEventActivity" />
+        </activity>
+        <activity
+            android:name="br.com.guidebar.activities.ViewUserActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_view_user"
+            android:parentActivityName="br.com.guidebar.activities.ListEventsActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.guidebar.activities.ListEventsActivity" />
+        </activity>
+        <!-- Points to searchable activity so the whole app can invoke search. -->
+        <meta-data
+            android:name="android.app.default_searchable"
+            android:value=".SearchEventActivity" />
+
+        <activity
+            android:name="br.com.guidebar.activities.PresentationActivity"
+            android:label="@string/title_activity_presentation" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCl_lyAP4b3DJyg1D6Zn3qijDpmm03uHQE" />
+
+        <activity
+            android:name="br.com.guidebar.activities.MapsRouteActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="br.com.guidebar.activities.EventPositionActivity"
+            android:label="@string/title_activity_event_position" >
+        </activity>
+        <activity
+            android:name="br.com.guidebar.activities.ListCategoriesActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_list_categories"
+            android:parentActivityName="br.com.guidebar.activities.ListEventsActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.guidebar.activities.ListEventsActivity" />
+        </activity>
+        <activity
+            android:name="br.com.guidebar.activities.ListPurchasesActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_list_purchases"
+            android:parentActivityName="br.com.guidebar.activities.ListEventsActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.guidebar.activities.ListEventsActivity" />
+        </activity>
+        <activity
+            android:name="br.com.guidebar.activities.ValidateCheckInActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_validate_check_in"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.google.zxing.client.android.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Ler QRCode"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SCAN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.com.guidebar.activities.AddImageActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_add_image"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="br.com.guidebar.activities.AddAddressActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_add_address"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="br.com.guidebar.activities.FiltersActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_filters"
+            android:parentActivityName="br.com.guidebar.activities.ListEventsActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.guidebar.activities.ListEventsActivity" />
+        </activity>
+        <activity
+            android:name="br.com.guidebar.activities.RecoverPassActivity"
+            android:label="@string/title_activity_recover_pass"
+            android:parentActivityName="br.com.guidebar.activities.LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.guidebar.activities.LoginActivity" />
+        </activity>
+        <activity android:name="com.facebook.LoginActivity" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+
+        <activity
+            android:name="br.com.guidebar.activities.DetailActivity"
+            android:label="@string/title_activity_detail"
+            android:parentActivityName="br.com.guidebar.activities.ListEventsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.guidebar.activities.ListEventsActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.com.guidebar.activities.ListProductsActivity"
+            android:configChanges="orientation"
+            android:label="@string/action_view_products"
+            android:parentActivityName="br.com.guidebar.activities.ViewEventActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.guidebar.activities.ViewEventActivity" />
+        </activity>
+        <activity
+            android:name="br.com.guidebar.CommentsActivity"
+            android:label="@string/title_activity_comments" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

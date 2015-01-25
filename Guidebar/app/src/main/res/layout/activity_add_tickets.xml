@@ -1,0 +1,169 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AddTicketsActivity" >
+
+    <!-- Add Ticket progress -->
+
+    <LinearLayout
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/status_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/progress_saving_data"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <!-- Add Ticket form -->
+
+    <LinearLayout
+        android:id="@+id/add_ticket_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/guidebar_background"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/list_item_horiz_margin"
+            android:layout_marginRight="@dimen/list_item_horiz_margin"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/lblTokenPagSeguro"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="@string/prompt_token_pagseguro"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/txtTokenPagseguro"
+                style="@style/loginEditText"
+                android:layout_width="match_parent"
+                android:ems="10"
+                android:hint="@string/prompt_token_pagseguro"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/list_item_horiz_margin"
+            android:layout_marginRight="@dimen/list_item_horiz_margin"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/lblEmailPagSeguro"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="@string/prompt_email_pagseguro"
+                android:textColor="#fff" />
+
+            <AutoCompleteTextView
+                android:id="@+id/txtEmailPagseguro"
+                style="@style/loginEditText"
+                android:completionThreshold="2"
+                android:hint="@string/prompt_email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/list_item_horiz_margin"
+            android:layout_marginRight="@dimen/list_item_horiz_margin"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/lblTicketDescription"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/prompt_ticket_description"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/txtTicketDescription"
+                style="@style/loginEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/prompt_ticket_description" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/list_item_horiz_margin"
+            android:layout_marginRight="@dimen/list_item_horiz_margin"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/lblTicketValue"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/prompt_ticket_value"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/txtTicketValue"
+                style="@style/loginEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/prompt_ticket_value"
+                android:inputType="numberDecimal" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAddTicket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/generic_buton"
+            android:onClick="attemptSave"
+            android:text="@string/action_add_ticket" />
+
+        <Button
+            android:id="@+id/btnAddImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/generic_buton"
+            android:onClick="addImage"
+            android:text="@string/action_next" />
+
+        <ListView
+            android:id="@+id/lstTickets"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/list_item_horiz_margin"
+            android:layout_marginRight="@dimen/list_item_horiz_margin"
+            android:layout_marginTop="5dp" >
+        </ListView>
+    </LinearLayout>
+
+</merge>

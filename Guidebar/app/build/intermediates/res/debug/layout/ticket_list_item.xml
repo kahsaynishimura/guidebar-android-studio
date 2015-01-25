@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/list_item_horiz_margin"
+            android:layout_marginRight="@dimen/list_item_horiz_margin"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/list_item_horiz_margin"
+            android:layout_marginRight="@dimen/list_item_horiz_margin"
+            android:textColor="#000"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDeactivate"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/generic_buton"
+        android:text="@string/action_deactivate" />
+
+</LinearLayout><!-- From: file:/Users/karina/GitHub/guidebar-android-studio/Guidebar/app/src/main/res/layout/ticket_list_item.xml -->

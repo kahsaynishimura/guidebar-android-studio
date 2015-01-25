@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/mnu_deactivate_event"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menu_deactivate"/>
+    <item
+        android:id="@+id/mnu_join"
+        android:orderInCategory="100"
+        android:showAsAction="withText"
+        android:title="@string/action_join"/>
+    <item
+        android:id="@+id/mnu_favorite"
+        android:orderInCategory="100"
+        android:showAsAction="withText"
+        android:title="@string/action_mark_as_favorite"/>
+    <item
+        android:id="@+id/mnu_route"
+        android:orderInCategory="100"
+        android:showAsAction="withText"
+        android:title="@string/action_route"/>
+    <item
+        android:id="@+id/mnu_facebook_comment"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menu_facebook_comment"/>
+    <item
+        android:id="@+id/mnu_validate_checkin"
+        android:orderInCategory="100"
+        android:showAsAction="withText"
+        android:title="@string/action_validate"/>
+    <item
+        android:id="@+id/mnu_denunciate"
+        android:orderInCategory="100"
+        android:showAsAction="withText"
+        android:title="@string/action_denunciate"/>
+
+</menu><!-- From: file:/Users/karina/GitHub/guidebar-android-studio/Guidebar/app/src/main/res/menu/activity_view_event.xml -->

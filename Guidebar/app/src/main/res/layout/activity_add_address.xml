@@ -1,0 +1,234 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AddAddressActivity" >
+
+    <!-- Add Address progress -->
+
+    <LinearLayout
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/status_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/progress_saving_data"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <!-- Add Address form -->
+
+    <ScrollView
+        android:id="@+id/add_address_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/guidebar_background"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/list_item_horiz_margin" >
+
+                <TextView
+                    android:id="@+id/lblState"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prompt_state"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/txtState"
+                    style="@style/guideBarSpinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/list_item_horiz_margin" >
+
+                <TextView
+                    android:id="@+id/lblCity"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prompt_city"
+                    android:textColor="@color/white" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/txtCity"
+                    style="@style/loginEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:completionThreshold="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/list_item_horiz_margin" >
+
+                <TextView
+                    android:id="@+id/lblStreet"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prompt_street"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/txtStreet"
+                    style="@style/loginEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textCapWords" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/list_item_horiz_margin" >
+
+                <TextView
+                    android:id="@+id/lblNumero"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prompt_number"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/txtNumero"
+                    style="@style/loginEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textCapCharacters" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/list_item_horiz_margin" >
+
+                <TextView
+                    android:id="@+id/lblBairro"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prompt_bairro"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/txtBairro"
+                    style="@style/loginEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textCapWords" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/list_item_horiz_margin" >
+
+                <TextView
+                    android:id="@+id/lblComplemento"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0dp"
+                    android:padding="0dp"
+                    android:text="@string/prompt_complemento"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/txtComplemento"
+                    style="@style/loginEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textCapWords" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/list_item_horiz_margin" >
+
+                <TextView
+                    android:id="@+id/lblCEP"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prompt_cep"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/txtCEP"
+                    style="@style/loginEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number" >
+                </EditText>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/generic_buton"
+                android:onClick="attemptSave"
+                android:text="@string/action_save" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/generic_buton"
+                android:onClick="next"
+                android:text="@string/action_jump" />
+        </LinearLayout>
+    </ScrollView>
+
+</merge>

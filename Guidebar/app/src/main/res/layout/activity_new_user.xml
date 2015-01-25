@@ -1,0 +1,114 @@
+<merge xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".NewUserActivity" >
+
+    <!-- New User progress -->
+
+    <LinearLayout
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/status_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/progress_saving_data"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <!-- New User form -->
+
+    <ScrollView
+        android:id="@+id/new_user_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/guidebar_background" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/img_ic_launcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:contentDescription="@string/img_description"
+                android:src="@drawable/ic_launcher_invertido" />
+
+            <TextView
+                android:id="@+id/txtWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/welcome_message"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/txtName"
+                style="@style/loginEditText"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="@string/prompt_name"
+                android:inputType="textCapWords" >
+            </EditText>
+
+            <AutoCompleteTextView
+                android:id="@+id/txtEmail"
+                style="@style/loginEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:ems="10"
+                android:hint="@string/prompt_email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/txtPassword"
+                style="@style/loginEditText"
+                android:ems="10"
+                android:hint="@string/prompt_password"
+                android:inputType="textPassword" />
+
+            <br.com.guidebar.customviews.DateDisplayPicker
+                android:id="@+id/txtBirthDate"
+                style="@style/guideBarSpinner"
+                android:hint="@string/prompt_birth_date" />
+
+            <Spinner
+                android:id="@+id/txtGender"
+                style="@style/guideBarSpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </Spinner>
+
+            <Button
+                android:id="@+id/btnNextStep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/generic_buton"
+                android:onClick="nextStep"
+                android:text="@string/action_save"
+                android:textColor="#000" />
+        </LinearLayout>
+    </ScrollView>
+
+</merge>

@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/event_position_form"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EventPositionActivity" >
+
+    <TextView 
+        android:id="@+id/tapText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/guidebar_background"
+        android:text="@string/tap_instructions"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/generic_buton"
+        android:onClick="next"
+        android:text="@string/action_jump" />
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+
+</LinearLayout>

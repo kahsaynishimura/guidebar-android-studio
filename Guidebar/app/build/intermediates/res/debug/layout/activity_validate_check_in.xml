@@ -1,0 +1,74 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ValidateCheckInActivity" >
+
+    <!-- Validate Checkin progress -->
+
+    <LinearLayout
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/status_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/progress_saving_data"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <!-- Validate Checkin form -->
+
+    <LinearLayout
+        android:id="@+id/validate_checkin_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnReadCode"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/generic_buton"
+                android:onClick="readCode"
+                android:text="@string/action_read_code" />
+
+            <Button
+                android:id="@+id/btnStop"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/generic_buton"
+                android:onClick="stopValidation"
+                android:text="@string/action_stop_validation" />
+        </LinearLayout>
+
+    
+        <ListView
+            android:id="@+id/itemListView"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone"
+            android:layout_weight="1" >
+        </ListView>
+    </LinearLayout>
+
+</merge><!-- From: file:/Users/karina/GitHub/guidebar-android-studio/Guidebar/app/src/main/res/layout/activity_validate_check_in.xml -->

@@ -1,0 +1,144 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".TicketActivity" >
+
+    <!-- New Purchase progress -->
+
+    <LinearLayout
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/status_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/progress_saving_data"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <!-- New Purchase form -->
+
+    <ScrollView
+        android:id="@+id/new_purchase_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/guidebar_background"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/list_item_horiz_margin"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/lblEmailPagSeguro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/list_item_horiz_margin"
+                android:layout_marginRight="@dimen/list_item_horiz_margin"
+                android:text="@string/prompt_email_pagseguro_instructions"
+                android:textColor="@color/white" />
+
+            <AutoCompleteTextView
+                android:id="@+id/txtEmailPagseguro"
+                style="@style/loginEditText"
+                android:completionThreshold="2"
+                android:hint="@string/prompt_email_pagseguro"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/lblSelectTicket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/list_item_horiz_margin"
+                android:layout_marginRight="@dimen/list_item_horiz_margin"
+                android:layout_marginTop="@dimen/list_item_vert_margin"
+                android:text="@string/prompt_select_ticket"
+                android:textColor="#fff" />
+
+            <Spinner
+                android:id="@+id/spnTickets"
+                style="@style/guideBarSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/list_item_horiz_margin"
+                android:layout_marginRight="@dimen/list_item_horiz_margin" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/list_item_horiz_margin"
+                android:layout_marginRight="@dimen/list_item_horiz_margin"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lblQuantity"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prompt_quantity"
+                    android:textColor="#fff" />
+
+                <EditText
+                    android:id="@+id/txtQuantity"
+                    style="@style/loginEditText"
+                    android:ems="10"
+                    android:hint="@string/prompt_quantity"
+                    android:inputType="number" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/list_item_horiz_margin"
+                android:layout_marginRight="@dimen/list_item_horiz_margin"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lblValue"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prompt_ticket_value"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/txtTicketValue"
+                    style="@style/loginEditText"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/prompt_valor"
+                    android:textColor="#000" />
+            </LinearLayout>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/generic_buton"
+                android:contentDescription="@string/action_buy_tiket"
+                android:onClick="buyPagSeguro"
+                android:src="@drawable/pagseguro120por53" />
+        </LinearLayout>
+    </ScrollView>
+
+</merge><!-- From: file:/Users/karina/GitHub/guidebar-android-studio/Guidebar/app/src/main/res/layout/activity_ticket.xml -->

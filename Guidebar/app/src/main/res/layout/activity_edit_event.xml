@@ -1,0 +1,246 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".EditEventActivity" >
+
+    <!-- Edit Event progress -->
+
+    <LinearLayout
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/status_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/progress_saving_data"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <!-- Edit Event form -->
+
+    <ScrollView
+        android:id="@+id/edit_event_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/guidebar_background" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/imgIcNewEvent"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="@string/edit_event_view"
+                    android:src="@drawable/novo_evento" />
+
+                <TextView
+                    android:id="@+id/lblEditEvent"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/edit_event_view"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lblCategory"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prompt_category"
+                    android:textColor="#fff" />
+
+                <Spinner
+                    android:id="@+id/spnCategory"
+                    style="@style/guideBarSpinner"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lblName"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prompt_name"
+                    android:textColor="#fff" />
+
+                <EditText
+                    android:id="@+id/txtName"
+                    style="@style/loginEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/prompt_name"
+                    android:inputType="textPersonName" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lblDescription"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prompt_description"
+                    android:textColor="#fff" />
+
+                <EditText
+                    android:id="@+id/txtDescription"
+                    style="@style/loginEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/prompt_description"
+                    android:inputType="textMultiLine" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lblFrom"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lblFrom"
+                    android:textColor="#fff" />
+
+                <br.com.guidebar.customviews.DateDisplayPicker
+                    android:id="@+id/txtStartDate"
+                    style="@style/guideBarSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <br.com.guidebar.customviews.TimeDisplayPicker
+                    android:id="@+id/txtStartTime"
+                    style="@style/guideBarSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/lblTo"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lblTo"
+                    android:textColor="#fff" />
+
+                <br.com.guidebar.customviews.DateDisplayPicker
+                    android:id="@+id/txtEndDate"
+                    style="@style/guideBarSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <br.com.guidebar.customviews.TimeDisplayPicker
+                    android:id="@+id/txtEndTime"
+                    style="@style/guideBarSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lblMinAge"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prompt_min_age"
+                    android:textColor="#fff" />
+
+                <EditText
+                    android:id="@+id/txtMinAge"
+                    style="@style/loginEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/prompt_min_age"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/chkOpenBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/prompt_open_bar"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/generic_buton"
+                android:text="@string/action_save" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/generic_buton"
+                android:onClick="next"
+                android:text="@string/action_jump" />
+        </LinearLayout>
+    </ScrollView>
+
+</merge>

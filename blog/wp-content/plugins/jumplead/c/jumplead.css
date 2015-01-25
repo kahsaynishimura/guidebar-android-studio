@@ -1,0 +1,259 @@
+.update-nag, #wpfooter {
+    display: none;
+}
+
+#jumplead_header {
+    height: 183px;
+    background: url('../assets/header.png') 0 0 repeat-x;
+}
+
+.jumplead header {
+    padding: 10px;
+}
+
+.jumplead header a {
+    color: #FFF;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 120%;
+    font-weight: normal;
+}
+
+.jumplead header a:hover {
+    color: #FFF;
+}
+
+.jumplead header .links {
+    float: right;
+    line-height: 80px;
+}
+
+#jumplead_logo {
+    float: left;
+    border: 0;
+    margin: 0 10px 0 0;
+    padding: 0;
+    width: 80px;
+    height: 80px;
+}
+
+.jumplead h2,
+.jumplead-splash header h3 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.65);
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 100;
+    vertical-align: baseline;
+
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.jumplead h2 {
+    line-height: 80px;
+}
+
+
+/* Footer */
+.jumplead footer {
+    text-align: center;
+}
+.jumplead footer .social a {
+    text-decoration: none;
+}
+.jumplead footer .social a:hover {
+    text-decoration: none;
+}
+
+.jumplead footer .copyright {
+    float: left;
+}
+.jumplead footer .links {
+    float: right;
+}
+
+/* Splash Page */
+.jumplead-splash {
+    text-align: center;
+}
+
+.jumplead-splash header {
+    display: block;
+    background-image: linear-gradient(#3590c2,#67b8e7 70%,#ffffff 100%);
+    background-color: #3C96C8;
+
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.jumplead-splash header img {
+    max-width: 80%;
+}
+
+.jumplead-splash section {
+    background-color: #FFF;
+    overflow: hidden;
+}
+
+.jumplead-splash h2 {
+    text-align: center;
+    font-size: 3em;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+.jumplead-splash h3 {
+    line-height: 1.8em;
+    font-size: 1.8em;
+}
+
+.jumplead-splash h4 {
+    padding: 10px;
+    margin: 40px 0 0 0;
+    font-size: 1.6em;
+}
+
+.jumplead-splash .jumpbot {
+    vertical-align: baseline;
+    display: inline-block;
+    background-color: #fff;
+    margin: -2.8em auto 0;
+    padding: 2em;
+    border: 0;
+
+    -webkit-border-radius: 4em;
+    -moz-border-radius: 4em;
+    -ms-border-radius: 4em;
+    -o-border-radius: 4em;
+    border-radius: 4em;
+
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.jumplead-splash .jumpbot img {
+    vertical-align: baseline;
+    max-width: 100%;
+    height: 1.8em;
+    display: inline-block;
+
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.jumplead-splash .videobox {
+    background-color: #333;
+    margin: 40px 0 0 0;
+    padding: 0 0 1em;
+    border: 0;
+}
+.jumplead-splash .videobox .video {
+    max-width: 63em;
+    margin: 0 auto;
+    padding: 2em 8em;
+
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.jumplead-splash .video iframe {
+    vertical-align: baseline;
+    height: 424px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.jumplead-splash .grid {
+    padding: 0 1em;
+}
+
+.jumplead-splash .grid .clear {
+    display: none;
+}
+
+.jumplead-splash .grid .feature {
+    float: left;
+    margin: 1em 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+.jumplead-splash .grid .feature hgroup {
+    margin: 0 0 1em;
+    padding: 3% 5% 1%;
+    border: 0;
+}
+.jumplead-splash .grid .feature h2,
+.jumplead-splash .grid .feature h3 {
+    text-shadow: none;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin: 0 0 10px 0;
+}
+
+.jumplead-splash .grid .feature h3 {
+    color: #aaa;
+    font-weight: normal;
+}
+
+.jumplead-splash .grid .feature a {
+    text-decoration: none;
+    color: #2290bf;
+}
+
+.jumplead-splash .grid .feature img {
+    max-width: 100%;
+
+}
+.jumplead-splash .grid .feature p {
+    font-size: 1.1em;
+}
+
+@media (min-width: 60em) {
+    .jumplead-splash .grid .feature {
+        display: inline;
+        width: 32%;
+        float: left;
+        margin-right: 1%;
+    }
+
+    .jumplead-splash .grid .clear:nth-child(3n)  {
+        display: block;
+    }
+}
+
+@media (max-width: 60em) and (min-width: 45em) {
+    .jumplead-splash .grid .feature {
+        float: left;
+        width: 48%;
+        margin-right: 1%;
+    }
+
+    .jumplead-splash .grid .feature:nth-child(4n) {
+        float: right;
+        margin-right: 0;
+    }
+
+    .jumplead-splash .grid .clear:nth-child(4n)  {
+        display: block;
+    }
+}

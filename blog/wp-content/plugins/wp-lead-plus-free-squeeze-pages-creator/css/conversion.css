@@ -1,0 +1,83 @@
+@CHARSET "ISO-8859-1";
+
+
+.page_buttons {
+	margin: auto; 
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.page_buttons button {
+	width: 150px;
+	height: 40px;
+	margin: 0 30px;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 4px;
+	font-size: 16px;
+	color: #fff;	
+}
+
+.normal_button {
+	background: #4788FF;
+	border: 1px solid #4788FF;
+}
+
+.selected_button {
+	background: #FF8133;
+	border: 1px solid #FF8133;
+}
+
+#data_loader {
+	margin: auto;
+	text-align: center;
+	display: none;
+}
+
+#sq_data_area, #sq_data_area table {
+	text-align: center;
+	margin: auto;
+}
+
+.pop_wid_preview {
+	cursor: pointer;
+}
+
+#pop_wid_preview {
+	display: none;
+}
+
+th, td {
+	
+	padding: 5px 30px;
+	text-align: left;
+}
+
+th {
+	background: #5289FF;
+	color: #fff;
+}
+
+td {
+	color: #0032BD;
+	
+}
+
+tr:nth-child(odd) td {
+	background: #E3FFE0;
+}
+
+tr:nth-child(even) td {
+	background: #D1DDFF;
+}
+
+/* view more button */
+.reset_data {
+	cursor: pointer;
+	background: #fff;
+	border-radius: 3px;
+	border: 0;
+	width: 60px;
+	height: 20px;
+}

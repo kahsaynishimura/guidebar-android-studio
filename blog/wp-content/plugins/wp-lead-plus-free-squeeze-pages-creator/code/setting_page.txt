@@ -1,0 +1,10 @@
+<div>
+	<h2>Settings</h2>
+	<p>You can set some settings for your squeeze pages here</p>
+	<h3>Tracking code</h3>
+	<p>Please copy and paste your tracking code you want to install in your squeeze page below. eg. Google
+	Analytic... then hit the Save button</p>
+	<textarea cols="50" rows="10" id="tracking_code"></textarea> <br />
+	<input type="submit" value="Save" class="button-primary" id="save_tracking_codeb"/>
+
+</div>

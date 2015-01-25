@@ -1,0 +1,52 @@
+<!-- popup CODE -->
+	<div id="popup_show_code" style="display: none;">
+		<textarea cols="100" rows="20"></textarea>
+		<div id="popup_show_code_close"></div>
+	</div>
+
+<!-- popup CODE -->
+
+<div id="right_panel">
+
+	<div id="gallery_panel" class="vgt_vertical_menu">
+		<input type="button" value="With Opt-in" id="withOptin" class="blueb" />
+		<input type="button" value="No Opt-in" id="noOptin" class="greenb" />
+	</div>
+
+	<div id="editing_panel" class="vgt_vertical_menu">
+
+		<input type="button" value="Add" id="vgt_addb" class="blueb" />
+		<input type="button" value="Remove" id="vgt_removeb" class="redb" />
+        <input type="button" value="Box BG" id="vgt_inner_background" class="orangeb" />
+        <input type="button" value="Enable Resize" id="vgt_enable_resize" class="orangeb" />
+		<input type="button" value="Edit Popup" id="vgt_pwedit" class="violetb" />
+
+	</div>
+	
+	<div id="code_panel" class="vgt_vertical_menu">
+        <input type="button" value="Media" id="code_mediab" class="blueb" />
+        <input type="button" value="Email" id="code_emailb" class="redb" />
+        <input type="button" value="CSS Code" id="code_custom_css_btn" class="orangeb"/>
+        <input type="button" value="JS Code" id="code_custom_js_btn" class="greenb" />
+	</div>
+
+</div>
+
+<!-- CODE PANEL -->
+
+<div id="popup_foot_panel">
+
+	<div id="buttons_right">
+		<input type="button" value="Edit this" id="pwedit_created_item_b" class="blueb vgt_edit_btn" style="display:none;" />
+		<input type="button" value="Edit this" id="editthisb" class="blueb vgt_edit_btn" style="display:none;" />
+		<input type="button" value="Save Popup" id="pwpublishb" class="redb" style="display: none;"/>
+		<input type="button" value="Code" id="codeb" class="blueb" />
+		<input type="button" value="Edit" id="editb" class="greenb" />
+		<input type="button" value="Select" id="selectb" class="orangeb" />
+	</div>
+	
+</div>
+
+<!--  HIDDEN INFO  -->
+<div id="vgt_page_type" style="display:none;">popup</div>
+

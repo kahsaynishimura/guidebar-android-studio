@@ -1,0 +1,54 @@
+Changelog
+
+4 Jan 2015 - 1.19
+--------------------------------------
+- services/employees page templates layout fix;
+- removed redundant esc_textarea from fp-call-to-action.php;
+- small CSS changes;
+- added CSS support for menu icons;
+- added home.php file;
+- added support for masonry and full width blog index layouts;
+- added imagesLoaded script and provided license info for it in readme.txt
+
+
+17 Dec 2014 - 1.18
+--------------------------------------
+- switched to inline-block for services/employees to allow centering
+- new size option for site logo
+- new size option for welcome logo
+- layout fix when only welcome logo and button are set
+
+
+10 Dec 2014 - 1.17
+--------------------------------------
+- small CSS fixes
+- new widget options
+- small change to the sticky menu
+- small change to the smooth scrolling code
+
+
+17 Nov 2014 - 1.16
+--------------------------------------
+- small addition to style.css
+
+
+17 Nov 2014 - 1.15
+--------------------------------------
+- added jquery.sticky.js
+- changed old sticky menu js code from scripts.js to jquery.sticky
+- changed CSS for the sticky menu
+- added license details in readme.txt for jquery.sticky.js
+- added category_name argument for services/testimonials/projects/employees widgets
+
+11 Nov 2014
+--------------------------------------
+- ADDED: page templates, single page header image ability, visual styles for Page Builder rows
+- FIXED: various issues in CSS
+- switched from jQuery Waypoints sticky to custom code
+- removed waypoints-sticky.js and waypoints-sticky.min.js
+- bumped version number
+
+30 Oct 2014
+--------------------------------------
+- Fix for Safari layout issue
+- Created changelog.txt

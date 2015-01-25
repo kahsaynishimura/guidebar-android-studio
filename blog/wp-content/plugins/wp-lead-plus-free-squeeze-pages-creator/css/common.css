@@ -1,0 +1,645 @@
+#wpbody-content {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	overflow: visible !important;
+
+	
+}
+
+.vgt_tick {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    position: absolute;
+    background: url(img/tick.png) no-repeat;
+}
+
+
+#wpcontent, body, html {
+    background: #fff !important;
+}
+.vgt_clear {
+	clear: both;
+}
+
+.vgt_hidden {
+    display: none;
+}
+
+textarea:focus, input:focus, .editable:focus, span:focus , #site_area *:focus{
+    outline: none;
+}
+
+#wpbody {
+	position: relative;
+    background: #fff !important;
+}
+
+
+#site_area{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding-bottom: 250px;
+    padding-top: 100px;
+}
+#site_info {
+    position: fixed;
+    top: 40px;
+    left: 180px;
+    z-index: 100;
+}
+
+#button_editor {
+	position: fixed;
+	bottom: 40px;
+}
+#main_container {
+    overflow: visible;
+    
+}
+.bg_blue {
+    background: #ABC8F7;
+}
+
+.bg_green {
+    background: #C2FFC4;
+}
+
+.bg_orange {
+    background: #FFCB9E;
+}
+
+.bg_red {
+    background: #FFBABA;
+}
+
+.bg_yellow {
+    background: #FFFEC4;
+}
+
+.blueb{
+	background-color: #4D90FE !important;
+}
+
+
+.redb{
+	background-color: #D84A38 !important;
+}
+
+.greenb{
+	background-color: #35AA47 !important;
+}
+
+.brownb{
+	background-color: #A3687F !important;
+}
+
+.navyb{
+	background-color: #1B89D1 !important;
+}
+
+.orangeb{
+	background-color: #EBA23B !important;
+}
+
+.violetb{
+	background-color: #6D1B81 !important;
+}
+
+.darkblueb{
+	background-color: #094ab2 !important;
+}
+
+.greyb{
+	background-color: #464646 !important;
+}
+
+.blackb{
+	background-color: #010101 !important;
+}
+
+.lightorangeb{
+	background-color: #ff5d0a !important;
+}
+
+.whiteb{
+	background-color: #cecece !important;
+	color: #000 !important;
+}
+
+.purpleb{
+	background-color: #91369f !important;
+}
+
+#editparent{
+    position: fixed;
+    bottom: 40px;
+    min-width: 200px;
+    width: 220px;
+    max-width: 100%;
+    border: 1px solid #FFDEA6;
+}
+#editbox {
+    height: 100px;
+    width: 100%;
+}
+
+/* EDITOR PANEL */
+#editor_control_panel {
+	position: fixed;
+	right: 5px;
+	text-align: right;
+	bottom: 47px;
+	display: none;
+	z-index: 100;
+}
+
+
+
+#editor_control_panel input[type="button"]{
+	display: block;
+}
+
+/* BUTTONS */
+#code_boxes button, #save_buttons input, #buttons_right input[type="button"], #vgt_button_settings_button, #face_panel input[type="button"], #foot_panel input[type="button"], #gallery_panel input[type="button"], #editing_panel input[type="button"], #code_panel input[type="button"], #editor_control_panel input[type="button"] {
+	cursor: pointer;
+	border: medium none;
+    font-family: "Segoe UI",Helvetica,Arial,sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+    margin: 5px 0 0;
+    outline: medium none;
+    padding: 5px 7px;
+    text-align: center;
+    color: white;
+	min-width: 6em;
+    width: 8em;
+	height: 30px;
+	border-radius: 3px;
+}
+
+
+/* EDITING PANEL */
+#editing_panel {
+	position: fixed;
+	right: 5px;
+	text-align: right;
+	bottom: 47px;
+	display: none;
+	z-index: 100;
+}
+
+#editing_panel input[type="button"]{
+	display: block;
+}
+
+/* END EDITING PANEL */
+
+/* CODING PANEL */
+
+#code_panel {
+	position: fixed;
+	right: 5px;
+	text-align: right;
+	bottom: 47px;
+	display: none;
+	z-index: 100;
+}
+
+
+
+#code_panel input[type="button"]{
+	display: block;
+}
+
+
+/* CODING PANEL */
+
+#buttons_right {
+	position: fixed;
+	right: 5px;
+	bottom: 3px;
+	text-align: center;
+}
+
+#buttons_right input[type="button"] {
+	display: inline;
+}
+
+/* the left boxes */
+#sq_bgt_customize_left {
+	display: none;
+}
+
+/* HTML AND JAVASCRIPT POSITION*/
+#custom_code_js, #custom_code_html {
+	display: none;
+}
+/* END HTML AND JAVASCRIPT POSITION */
+
+.vgt_thumbnail {
+	width: 149px;
+	padding: 5px;
+	float: right;
+	text-align: center;
+}
+
+.vgt_thumbnail img {
+	width: 140px;
+	height: 86px;
+	margin: auto;
+	
+}
+
+/* THEME GALLERY */
+.vgt_gallery {
+	position: absolute;
+	width: 80%;
+    padding-left: 40px;
+	bottom: 0;
+	right: 0;
+	top: 20px;
+	background-color: white;
+	display: none;
+}
+
+#nooptin_gallery {
+	display: none;
+}
+
+#optin_gallery {
+	display: none;
+}
+
+/* END THEME GALLERY */
+
+/* THEME GALLERY PANEL */
+#gallery_panel {
+	position: fixed;
+	right: 5px;
+	bottom: 45px;
+	display: none;
+	z-index: 100;
+}
+	
+/* END THEME GALLERY PANEL */
+
+/* CHANGEABLE BACKGROUND IMAGES */
+.bgt_bg_change {
+	cursor: copy;
+}
+
+/* GENERAL NOTIFICATION DIV */
+#sq_bgt_general_notification {
+	width: 15%;
+	left: 40.5%;
+	line-height: 150%;
+	text-align: center;
+	position: fixed;
+	top: 50px;
+	padding: 1% 2%;
+	border-radius: 8px;
+	font-size: 1em;
+	display: none;
+}
+
+
+/*  SETTINGS FOR BUTTONS AND BACKGRROUND IMAGES  */
+#vgt_hidden_advanced_settings {
+	display: none;
+	width: 100%;
+	position: fixed;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: url(img/bg.png);
+	z-index: 1000;
+}
+
+.vgt_close_btn {
+	width: 32px;
+	height: 32px;
+	background: url(img/close_btn.png) no-repeat;
+	position: fixed;
+	top: 40px;
+	right: 10px;
+	cursor: pointer;
+}
+.vgt_extra_settings {
+	display: none;
+	width: 90%;
+	margin: 40px auto 10px;
+	padding: 20px 10px 40px;
+	background: #fff;
+	border-radius: 5px;
+}
+
+.vgt_extra_settings * {
+	max-width: 100%;
+	margin: 5px auto;
+	display: block;
+	
+}
+
+
+/* BUTTON SETTINGS  */
+#vgt_button_settings_button {
+	position: fixed;
+	bottom: 2px;
+	left: 180px;
+	z-index: 101;
+	display: none;
+}
+
+#crazy_vgt .mce-tinymce {
+    max-width: 350px;
+    position: absolute;
+}
+
+
+#vgt_get_shortcode {
+    margin-left: 20px;
+    display: none;
+}
+
+
+/* MANAGING POPUP AND WIDGETS */
+.vgt_manage_extra_settings {
+    margin-left: 30px;
+}
+
+
+/* CODE BOXES */
+#code_boxes {
+    width: 600px;
+    max-height: 350px;
+    margin: auto;
+    text-align: center;
+}
+
+#code_boxes > div{
+    width: 500px;
+    max-height: 350px;
+    font-size: 14px;
+    display: none;
+}
+
+#code_boxes > div textarea{
+    width: 100%;
+    height: 200px;
+}
+
+#code_boxes input, #code_boxes select{
+    width: 100%;
+    margin: auto;
+    display: block;
+    margin: 0px auto 10px;
+}
+
+#code_boxes button {
+    display: inline-block;
+    margin: 10 0 10 20;
+
+}
+
+#code_boxes .code_boxes_buttons {
+    text-align: right;
+    width: 100%;
+    margin: auto;
+}
+
+#vgt_outer_background_div div, #vgt_inner_background_div div {
+    margin: 10px auto;
+}
+
+#vgt_outer_background_div label, #vgt_inner_background_div label {
+    display: inline-block;
+    text-align: left;
+    margin-left: 0px;
+}
+
+/* STYLING DELETE BUTTON */
+.vgt_single_list_item {
+    padding: 5px;
+    border-bottom: 1px solid #bfe6ff;
+    width: 400px;
+}
+
+.vgt_single_item_name {
+    padding-bottom: 0;
+    font-size: 1.1em;
+    display: inline-block;
+    margin-bottom: 0px;
+    width: 200px;
+    vertical-align: bottom;
+
+}
+.vgt_delete_item {
+    display: inline-block;
+    cursor: pointer;
+    padding: 2px 4px;
+    color: #ff5d0a;
+    margin-left: 30px;
+    background: #bfe6ff;
+    border-radius: 4px;
+}
+
+
+/* MANAGE POPUP WIDGETS */
+
+
+#vgt_popup_manager .delete_option {
+    width: 20%;
+    display: inline-block;
+}
+
+#on_category_value .list_of_categories input {
+     display: inline-block;
+}
+
+#on_category_value span {
+    display: block;
+}
+
+.vgt-header {
+    display: inline-block;
+    width: 40%;
+    color: #777;
+    float: left;
+    border-bottom: 1px solid #dedede;
+    text-align: center;
+    border-radius: 2px;
+    padding: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.vgt-header:hover {
+    background: #acdfff;
+}
+
+.vgt-header-active {
+    background: #acdfff;
+}
+
+/* BUTTON STYLES */
+#vgt_button_styles {
+
+
+}
+
+#vgt_styles {
+    width: 20%;
+    padding: 10px 4%;
+    border: 0;
+    margin: 0;
+    display: inline-block;
+    float: left;
+}
+
+#vgt_styles button{
+    display: block;
+    margin: 5px 10px;
+}
+
+#vgt_colors {
+    width: 70%;
+    padding: 10px 1%;
+    border: 0;
+    margin: 0;
+    display: inline-block;
+    float: left;
+}
+
+#vgt_colors button {
+    margin: 10px;
+    display: inline-block;
+}
+
+/* STYLING FOR TINYMCE LIST */
+[page_type] ul,[page_type] ol {
+    max-width: 90%;
+    text-align: left;
+    margin-left: 2% !important;
+
+}
+
+
+[page_type] ul.arrow_green li {
+    list-style-type: none;
+    background: url(img/arrow_green.png) no-repeat !important;
+    padding-left: 25px !important;
+}
+
+[page_type] ul.arrow_blue li {
+    list-style-type: none;
+    background: url(img/arrow_blue.png) no-repeat !important;
+    padding-left: 25px !important;
+}
+
+
+[page_type] ul.arrow_orange li {
+    list-style-type: none;
+    background: url(img/arrow_orange.png) no-repeat !important;
+    padding-left: 25px !important;
+}
+
+[page_type] ul.arrow_red li {
+    list-style-type: none;
+    background: url(img/arrow_red.png) no-repeat !important;
+    padding-left: 25px !important;
+}
+
+[page_type] ul.tick_green li {
+    list-style-type: none;
+    background: url(img/tick_green.png) no-repeat !important;
+    padding-left: 25px !important;
+}
+
+[page_type] ul.tick_blue li {
+    list-style-type: none;
+    background: url(img/tick_blue.png) no-repeat !important;
+    padding-left: 25px !important;
+}
+
+
+[page_type] ul.tick_orange li {
+    list-style-type: none;
+    background: url(img/tick_orange.png) no-repeat !important;
+    padding-left: 25px !important;
+}
+
+[page_type] ul.tick_red li {
+    list-style-type: none;
+    background: url(img/tick_red.png) no-repeat !important;
+    padding-left: 25px !important;
+}
+
+[page_type] ul.circle_green li {
+    list-style-type: none;
+    background: url(img/circle_green.png) no-repeat !important;
+    padding-left: 25px !important;
+}
+
+[page_type] ul.circle_blue li {
+    list-style-type: none;
+    background: url(img/circle_blue.png) no-repeat !important;
+    padding-left: 25px !important;
+}
+
+
+[page_type] ul.circle_orange li {
+    list-style-type: none;
+    background: url(img/circle_orange.png) no-repeat !important;
+    padding-left: 25px !important;
+}
+
+[page_type] ul.circle_red li {
+    list-style-type: none;
+    background: url(img/circle_red.png) no-repeat !important;
+    padding-left: 25px !important;
+}
+
+/* SETTINGS */
+#vgt_settings *{
+    max-width: 50%;
+}
+
+#vgt_settings input, #vgt_settings textarea {
+    margin: 10px 0;
+}
+
+#vgt_button_action > select, #vgt_button_action > div {
+    max-width: 500px;
+}
+
+/* ADDITIONAL PARTS TO FORM */
+.vgt_form_notification {
+    text-align: center;
+    margin: auto;
+    max-width: 100%;
+}
+.vgt_form_messages {
+    display: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+    max-width: 100%;
+    color: #fff;
+}
+
+.vgt_notification_success {
+    background-color: #7ad5ff;
+}
+
+.vgt_notification_missing {
+    background-color: #ff7a93;
+}
+

@@ -1,0 +1,436 @@
+/* EDITBOX STYLE */
+.mceText[title$="px"] {
+	font-size: 1em !important;
+}
+
+#wpbody-content {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	
+}
+
+#main_container {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+#left_panel {
+	position: aboslute;
+	width: 18%;
+	left: 0;
+	top: 10px;
+
+}
+
+#left_panel .widefat, #left_panel label {
+	font-size: 13px;
+}
+#editbox {
+	height: 200px;
+}
+
+#wp-editbox-wrap {
+	position: fixed;
+	bottom: 45px;
+	width: 17%;
+}
+
+#foot_panel, #widget_foot_panel {
+	height: 40px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #D9F0FF;
+	z-index: 100;
+}	
+
+#footer {
+	border: 0;
+	display: none;
+}
+
+#wpfooter {
+	border: 0;
+	display: none;
+}
+
+
+/* BUTTONS */
+#widget_getcodeb {
+	text-decoration: none;
+	color: white;
+	
+}
+
+
+#buttons_right {
+	position: fixed;
+	right: 5px;
+	bottom: 3px;
+	text-align: center;
+}
+
+#buttons_right input[type="button"] {
+	display: inline;
+}
+
+
+/* END BUTTONS */
+
+
+/* THEME GALLERY */
+#gallery {
+	position: absolute;
+	width: 80%;
+	bottom: 0;
+	right: 0;
+	top: 20px;
+	background-color: white;
+	display: none;
+}
+
+#video_themes {
+	display: none;
+}
+
+#nonvid_themes {
+	display: none;
+}
+
+/* END THEME GALLERY */
+
+/* THEME GALLERY PANEL */
+#gallery_panel {
+	position: fixed;
+	right: 5px;
+	bottom: 45px;
+	display: none;
+	z-index: 100;
+}
+	
+/* END THEME GALLERY PANEL */
+
+/*	THE EDITOR */
+
+
+#linkurl {
+	position: absolute !important;
+	left: 5px !important;
+	bottom: 3px !important;
+	text-align: center !important;
+    padding: 5px 7px !important;
+	display: none;
+	background: white;
+	height: 28px;
+	width: 10em;
+	font-size: 1em;
+}
+
+/* END THE EDITOR */
+
+/* EDITING PANEL */
+#editing_panel {
+	position: fixed;
+	right: 5px;
+	text-align: right;
+	bottom: 47px;
+	display: none;
+	z-index: 100;
+}
+
+#editing_panel input[type="button"]{
+	display: block;
+}
+
+/* END EDITING PANEL */
+
+/* CODING PANEL */
+
+#code_panel {
+	position: fixed;
+	right: 5px;
+	text-align: right;
+	bottom: 47px;
+	display: none;
+	z-index: 100;
+}
+
+#code_panel input[type="button"]{
+	display: block;
+}
+
+/* CODING PANEL */
+
+/* BUTTONS PANEL */
+#buttons_panel {
+	position: absolute;
+	top: 0;
+	left: 20%;
+	right: 0;
+	bottom: 0;
+	width: 79%;
+	background: white;
+	display: none;
+}
+.cta_button{
+	width: 150px;
+	height: 80px;
+	float: left;
+	padding: 5px 10px 0;
+	text-align: center;
+}
+
+.cta_button img{
+	width: 150px;
+}
+
+
+/* END BUTTONS PANEL */
+
+/* BACKGROUNDS PANEL */
+#bgs_panel {
+	position: absolute;
+	top: 0;
+	left: 20%;
+	right: 0;
+	bottom: 0;
+	width: 79%;
+	background: white;
+	display: none;
+}
+.site_bg{
+	width: 150px;
+	height: 120px;
+	float: left;
+	padding: 5px 10px 0;
+	text-align: center;
+}
+
+.site_bg img{
+	width: 120px;
+}
+
+
+/* END BACKGROUNDS PANEL */
+
+
+/* POST PANEL */
+#posts_panel {
+	position: absolute;
+	top: 0;
+	left: 20%;
+	right: 0;
+	bottom: 0;
+	width: 80%;
+	background: white;
+	display: none;
+	overflow: scroll;
+}
+
+#posts_panel .created_page {
+	padding: 5px;
+	font-size: 1.1em;
+	font-weight: bold;
+	
+}
+
+#posts_panel .created_page a {
+	padding-left: 5px;
+	
+}
+/* END POST PANEL */
+
+/* SITE INFO, THE TOP LEFT BOXES */
+#site_info {
+	font-size: 14px;
+}
+
+/* END SITE INFO, THE TOP LEFT BOXES */
+
+
+/* WIDGET CSS */
+#widget_right_panel {
+	position: fixed;
+	right: 5px;
+	text-align: right;
+	bottom: 47px;
+	z-index: 100;
+}
+
+#widget_right_panel input[type="button"] {
+	display: block;
+}
+
+#widget_edit_panel {
+	display: none;
+}
+
+#widget_code_panel {
+	display: none;
+}
+
+#widget_themes {
+	position: absolute;
+	width: 79%;
+	left: 20%;
+	background-color: white;
+	top: 0;
+	padding-top: 20px;
+	
+}
+
+#sq_created_widgets {
+	position: absolute;
+	width: 75%;
+	left: 23%;
+	background-color: white;
+	top: 0;
+	padding-top: 20px;
+	min-height: 300px;
+	
+}
+
+
+/* WIDGET COLORS */
+.widget_color, .theme_color_switch {
+	float: left;
+	padding: 0 10px;
+	text-align: center;
+}
+
+
+.widget_color img, .theme_color_switch img {
+	border: 1px solid grey;
+	display: block;
+}
+
+/* END WIDGET COLORS */
+
+/* WIDGET CODE BOXES */
+#widget_code_boxes {
+	position: fixed;
+	width: 17%;
+	bottom: 45px;
+}
+
+#widget_code_boxes textarea{
+	display: none;
+	width: 100%;
+	height: 200px;
+	font-size: 14px;
+}
+
+#widget_code_boxes #widget_email_code {
+	background-color: #9bc76e;
+}
+/* END WIDGET CODE BOXES */
+
+/* WIDGET CHANGE CTA BUTTON */
+#widget_cta_btns {
+	position: absolute;
+	width: 79%;
+	left: 20%;
+	background-color: white;
+	top: 0;
+	padding-top: 20px;
+	
+}
+.widget_cta_btn img{
+	width: 80%;
+	display: block;
+	margin: auto;
+}
+
+.widget_cta_btn {
+	text-align: center;
+	width: 150px;
+	height: 60px;
+	
+}
+
+/* END WIDGET CHANGE CTA BUTTON */
+
+/* SHOW WIDGET CODE */
+
+
+#widget_show_code textarea {
+	padding-top: 30px;
+}
+
+#widget_show_code_close {
+	background: url(img/close.png) no-repeat;
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	cursor: pointer;
+}
+
+.sq_bgt_delete_widget {
+	cursor: pointer;
+	padding-left: 15px;
+}
+
+/* MANAGE WIDGET CSS */
+
+#sq_bgt_manage_widget_left {
+	float: left;
+	width: 40%;
+}
+
+#sq_bgt_manage_widget_right {
+	width: 50%;
+	padding: 20px;
+}
+
+
+#sq_bgt_current_widget_options table, #sq_bgt_current_widget_options th, #sq_bgt_current_widget_options td {
+	border: 1px solid #002288;
+}
+
+#sq_bgt_current_widget_options table {
+	border-collapse: collapse;
+}
+
+/* CODE FOR NEW VERSION */
+
+/* MANAGE WIDGET */
+#vgt_widget_manager {
+    width: 100%;
+    margin: auto;
+}
+
+#vgt_widget_manager #vgt_manager_left, #vgt_widget_manager #vgt_manager_right {
+    width: 44%;
+    padding: 0 2%;
+    float: left;
+}
+
+#vgt_widget_manager select, #vgt_widget_manager input[type=text] {
+    width: 60%;
+
+}
+
+#vgt_widget_manager label {
+    display: inline-block;
+}
+
+#vgt_widget_manager .form-control {
+    display: block;
+    margin: 1px 5px 10px;
+}
+
+#vgt_created_options {
+    display: none;
+}
+
+#vgt_option_settings {
+    display: none;
+}
+

@@ -1,0 +1,280 @@
+#vgt_outer_container , #vgt_outer_container  div, #vgt_outer_container  span, #vgt_outer_container  applet, #vgt_outer_container  object, #vgt_outer_container  iframe, #vgt_outer_container 
+h1, #vgt_outer_container  h2, #vgt_outer_container  h3, #vgt_outer_container  h4, #vgt_outer_container  h5, #vgt_outer_container  h6, #vgt_outer_container  p, #vgt_outer_container  blockquote, #vgt_outer_container  pre, #vgt_outer_container 
+a, #vgt_outer_container  abbr, #vgt_outer_container  acronym, #vgt_outer_container  address, #vgt_outer_container  big, #vgt_outer_container  cite, #vgt_outer_container  code, #vgt_outer_container 
+del, #vgt_outer_container  dfn, #vgt_outer_container  em, #vgt_outer_container  img, #vgt_outer_container  ins, #vgt_outer_container  kbd, #vgt_outer_container  q, #vgt_outer_container  s, #vgt_outer_container  samp, #vgt_outer_container 
+small, #vgt_outer_container  strike, #vgt_outer_container  strong, #vgt_outer_container  sub, #vgt_outer_container  sup, #vgt_outer_container  tt, #vgt_outer_container  var, #vgt_outer_container 
+b, #vgt_outer_container  u, #vgt_outer_container  i, #vgt_outer_container  center, #vgt_outer_container 
+dl, #vgt_outer_container  dt, #vgt_outer_container  dd, #vgt_outer_container  ol, #vgt_outer_container  ul, #vgt_outer_container  li, #vgt_outer_container 
+fieldset, #vgt_outer_container  form, #vgt_outer_container  label, #vgt_outer_container  legend, #vgt_outer_container 
+table, #vgt_outer_container  caption, #vgt_outer_container  tbody, #vgt_outer_container  tfoot, #vgt_outer_container  thead, #vgt_outer_container  tr, #vgt_outer_container  th, #vgt_outer_container  td, #vgt_outer_container 
+article, #vgt_outer_container  aside, #vgt_outer_container  canvas, #vgt_outer_container  details, #vgt_outer_container  embed, #vgt_outer_container  
+figure, #vgt_outer_container  figcaption, #vgt_outer_container  footer, #vgt_outer_container  header, #vgt_outer_container  hgroup, #vgt_outer_container  
+menu, #vgt_outer_container  nav, #vgt_outer_container  output, #vgt_outer_container  ruby, #vgt_outer_container  section, #vgt_outer_container  summary, #vgt_outer_container 
+time, #vgt_outer_container  mark, #vgt_outer_container  audio, #vgt_outer_container  video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+#vgt_outer_container, article, #vgt_outer_container  aside, #vgt_outer_container  details, #vgt_outer_container  figcaption, #vgt_outer_container  figure, #vgt_outer_container  
+footer, #vgt_outer_container  header, #vgt_outer_container  hgroup, #vgt_outer_container  menu, #vgt_outer_container  nav, #vgt_outer_container  section {
+	display: block;
+}
+#vgt_outer_container {
+	line-height: 1;
+}
+#vgt_outer_container ol, #vgt_outer_container  ul {
+	list-style: none;
+}
+#vgt_outer_container blockquote, #vgt_outer_container  q {
+	quotes: none;
+}
+#vgt_outer_container blockquote:before, #vgt_outer_container  blockquote:after, #vgt_outer_container 
+q:before, #vgt_outer_container  q:after {
+	content: '';
+	content: none;
+}
+#vgt_outer_container table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*  END CSS RESETS  */
+
+body {
+	margin: 0;
+}
+
+#vgt_outer_container {
+	font-family: 'helvetica', 'arial',sans-serif;
+	margin: 0 auto;
+	text-align: center;
+	border: 0;
+	padding: 0;
+	font-size: 16px;
+	width: 100%;
+	max-width: 100%;
+
+}
+
+#vgt_outer_container * {
+	max-width: 100%;
+}
+
+#vgt_outer_container #vgt_banner {
+	width: 100%;
+	padding: 15px 0;
+	margin: auto;
+	background: #205b79;
+}
+
+
+#vgt_outer_container #vgt_body {
+	width: 960px;
+	margin: 30px auto 60px;
+	text-align: center;
+
+}
+
+#vgt_outer_container #vgt_body #vgt_body_left {
+	width: 60%;
+	padding: 0 1%;
+	margin: 0;
+	border: 0;
+	float: left;
+}
+
+
+#vgt_outer_container #vgt_body #vgt_body_left  .vgt_body_left_head{
+	width: 90%;
+	text-align: center;
+	font-size: 1.8em;
+	font-weight: bold;
+	line-height: 1.2em;
+	color: #06206b;
+	margin: 0 0 10px 0;
+}
+
+#vgt_outer_container #vgt_body #vgt_body_left #vgt_body_left_content {
+	width: 90%;
+	margin: 10px auto;
+	text-align: left;
+	padding: 10px 5px;
+	font-size: 1em;
+	line-height: 1.3em;
+	color: #555;
+}
+
+#vgt_outer_container #vgt_body #vgt_body_left #vgt_body_left_content p {
+	margin: 10px auto 20px;
+	line-height: 1.4em;
+}
+
+#vgt_outer_container #vgt_body #vgt_body_left #vgt_body_left_content ul{
+	margin: 10px auto;
+}
+
+#vgt_outer_container #vgt_body #vgt_body_left #vgt_body_left_content li {
+	text-align: left;
+	background: url(imgs/tick.png) no-repeat;
+	padding-left: 30px;
+	line-height: 24px;
+	margin-bottom: 15px;
+	font-size: 1em;
+
+}
+
+#vgt_outer_container #vgt_body #vgt_body_right {
+	width: 35%;
+	padding: 30px 1%;
+	margin: 0;
+	background: #efefef;
+	border-radius: 10px;
+	float: left;
+}
+
+#vgt_outer_container #vgt_body #vgt_body_right input, #vgt_outer_container #vgt_body #vgt_body_right button {
+	margin: auto;
+	text-align: center;
+	width: 90%;
+	display: block;
+}
+
+
+#vgt_outer_container #vgt_body #vgt_body_right .vgt_body_right_head {
+	font-size: 1.6em; 
+	font-weight: bold;
+	color: #e14a0f;
+	line-height: 1.1em;
+	padding-bottom: 5px;
+	float: none;
+}
+
+#media_box {
+	width: 100%;
+	height: 210px;
+}
+
+#media_box iframe{
+	width: 100%;
+	height: 200px;
+}
+#vgt_outer_container #vgt_body #vgt_body_right .vgt_body_right_head img {
+	margin: 10px auto 5px;
+	width: 160px;
+}
+
+#vgt_outer_container input:focus {
+	outline: none;
+}
+
+#vgt_outer_container #vgt_body #vgt_body_right form input[type=text], #vgt_outer_container #vgt_body #vgt_body_right form input[type=email], #vgt_outer_container #vgt_body #vgt_body_right form input[type=number] {
+	padding: 15px 0;
+	width: 90%;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	text-align: center;
+	color: #888;
+	font-size: 1em;
+	margin: 15px auto 5px;
+
+}
+
+#vgt_outer_container #vgt_body #vgt_body_right form input[type=button], #vgt_outer_container #vgt_body #vgt_body_right form input[type=submit], #vgt_outer_container #vgt_body #vgt_body_right form button {
+	padding: 15px 0;
+	width: 90%;
+	font-size: 1em;
+	margin: 10px auto 10px;
+	background-color:#ff873d ;
+	-moz-border-radius:6px ;
+	-webkit-border-radius:6px ;
+	border-radius:6px ;
+	border:1px solid #c74c00 ;
+	display:inline-block ;
+	cursor:pointer ;
+	color:#ffffff ;
+	font-family:arial ;
+	text-decoration:none ;	
+
+}
+
+#vgt_outer_container #vgt_footer {
+	padding-bottom: 50px;
+}
+
+#vgt_outer_container #vgt_footer hr {
+	width: 100%;
+	color: #dedede;
+	border: 0;
+	border-top: 1px solid #dedede;
+}
+
+#vgt_footer #vgt_footer_left {
+	float: left;
+	font-size: .9em;
+	text-align: center;
+	color: #999;
+	width: 60%;
+	padding: 10px 0;
+	border: 0;
+	margin: 0;
+
+}
+
+#vgt_footer #vgt_footer_right {
+	float: left;
+	padding: 10px 0;
+	border: 0;
+	margin: 0;
+	width: 40%;
+}
+
+#vgt_outer_container #vgt_footer li {
+	display: inline;
+	margin-left: 10px;
+	font-size: .9em;
+	float: left;
+
+}
+#vgt_outer_container #vgt_footer a {
+	color: #0084ff;
+} 
+
+
+@media screen and (max-width: 600px)
+{
+	#vgt_outer_container #vgt_big_header {
+		font-size: 2em;
+		line-height: 1.2em;
+
+	}
+
+	#vgt_outer_container #vgt_body #vgt_body_right, #vgt_outer_container #vgt_body #vgt_body_left {
+		float: none;
+		width: 90%;
+		margin: auto;
+		text-align: center;
+	}
+
+
+	#vgt_outer_container #vgt_body #vgt_body_right form.vgt_form_title {
+		font-size: 1em;
+	}
+
+	#vgt_footer {
+		text-align: center;
+	}
+
+	#vgt_footer #vgt_footer_left, #vgt_footer #vgt_footer_right, #vgt_footer #vgt_footer_right ul {
+		float: none;
+		margin: auto;
+		text-align: center;
+	}
+	#vgt_footer #vgt_footer_right, #vgt_footer #vgt_footer_left {
+		float: none;
+	}
+	
+
+}

@@ -1,0 +1,229 @@
+<div style="position: fixed; top: 0px; right: 0; z-index: 1000000;">
+<a style="color: #65ff47 !important;" target="_blank" href="http://wpleadplus.com/?scr=inusing" ><strong>Get A/B testing, Conversion Tracking and Popups </strong></a>
+<a target="_blank"  href="http://www.youtube.com/playlist?list=PL6rw2AEN42Eoyq6_ht0TA-SM55jUWU8m5" class="btn btn-success glyphicon glyphicon-book"> Tutorials</a>
+<a target="_blank"  href="http://wpleadplus.com/contact/" class="btn btn-danger glyphicon glyphicon-send"> Support</a>
+</div>
+
+
+
+<div id="vgt_created_item_gallery" class="vgt_gallery">
+
+
+</div>
+
+<div id="vgt_box_background_settings" class="vgt_gallery"> <!-- Box for setting background color of inner box of squeeze page, popup, widget -->
+    <select id="vgt_box_background_settings_type">
+        <option value="box_solid_color">Solid color</option>
+        <option value="box_image_pattern">Image pattern</option>
+    </select>
+
+
+    <div class="vgt_hidden">
+        <label class="label label-info">Select color</label>
+        <input type="color" id="box_solid_color" />
+    </div>
+
+    <div class="vgt_hidden">
+        <label class="label label-info">Pattern URL</label>
+        <input type="text" id="box_image_value" />
+    </div>
+
+</div>   <!-- vgt_box_background_settings -->
+
+
+
+
+<div id="vgt_hidden_advanced_settings" class="vgt_gallery">
+	<div class="vgt_close_btn"></div>
+	<div id="vgt_button_settings" class="vgt_extra_settings">
+
+        <ul id="vgt_button_settings_tab" class="nav nav-tabs">
+            <li><a href="#vgt_button_action" data-toggle="tab">Action</a></li>
+            <li><a href="#vgt_button_styles" data-toggle="tab">Select style</a></li>
+
+        </ul>
+		<div id="vgt_settings_content" class="tab-content">
+            <div id="vgt_button_action" class="tab-pane">
+
+                <select class="form-control" id="vgt_button_behavior">
+                    <option value="default">Default</option>
+                    <option value="open_link">Open a link</option>
+                </select>
+
+                <div id="vgt_url_to_open" style="display: none">
+                    <input type="text" id="vgt_url_to_open_value" placeholder="put your url here" class="form-control"  />
+                    <input type="checkbox" name="vgt_new_window" /> Open in new window
+                </div>
+
+                <div style="display: none;">
+                    <label class="label label-info">Pick a popup option</label>
+                    <select id="vgt_popup_to_display" class="form-control">
+
+                    </select>
+                </div>
+
+
+            </div><!-- vgt_button_action  -->
+
+
+            <div id="vgt_button_styles" class="tab-pane">
+                <div id="vgt_styles">
+
+                </div> <!-- vgt_styles -->
+
+                <div id="vgt_colors" style="display: none;">
+
+                </div> <!-- vgt_color -->
+
+                <div class="vgt_clear"></div>
+
+            </div> <!-- vgt_button_styles -->
+
+            <div id="vgt_create_button_style" class="tab-pane">
+
+
+
+            </div>
+			<!--    <a href="#" >Show advanced options</a> -->
+
+		</div>
+
+
+		<div class="vgt_clear"></div>
+		<button id="vgt_save_button_settings" class="btn btn-success">Save</button>
+	</div>
+
+
+	<div id="vgt_input_settings" class="vgt_extra_settings">
+		<input type="text" class="form-control" placeholder="enter input box text here"/>
+		<label class="label label-info">Select color for input text</label>
+		<input type="color" class="form-control" placeholder="enter input box text here"/>
+		<button id="vgt_save_input_settings" class="btn btn-success">Save</button>
+	</div>
+
+</div> <!--  vgt_hidden_advanced_settings  -->
+
+<div id="vgt_created_items_gallery">
+
+</div>
+
+
+
+<button id="vgt_button_settings_button" class="redb">Button Settings</button>
+
+<!-- code boxes for all pages -->
+
+
+<!-- CODE PANEL -->
+
+<div id="code_boxes">
+    <div id="vgt_email_code_div">
+        <textarea id="email_code" placeholder="Enter your autoresponder code here"></textarea>
+
+        <div class="code_boxes_buttons">
+            <button class="greenb code_box_save" for-code="autoresponder">Save</button> <button class="redb code_box_close">Close</button>
+        </div>
+    </div>
+
+    <div id="vgt_media_code_div">
+        <textarea id="media_code" placeholder="Enter your video embed code/image url here"></textarea>
+
+        <div class="code_boxes_buttons">
+            <button class="greenb code_box_save" for-code="media">Save</button> <button class="redb code_box_close">Close</button>
+        </div>
+    </div>
+
+    <div id="vgt_custom_html_code_div">
+        <textarea id="custom_html_code" class="bg_yellow" placeholder="Enter your custom HTML code here"></textarea>
+
+        <div class="code_boxes_buttons">
+            <button class="greenb code_box_save" for-code="html">Save</button> <button class="redb code_box_close">Close</button>
+        </div>
+    </div>
+
+    <div id="vgt_custom_javascript_code_div">
+        <h4>Where do you want to put the code?</h4>
+        <select class="form-control" id="custom_javascript_position">
+            <option value="before_body_close"></option> <!-- default value -->
+            <option value="after_head_open">After &lthead&gt</option>
+            <option value="before_head_close">Before &lt/head&gt</option>
+            <option value="after_body_open">After &ltbody&gt</option>
+            <option value="before_body_close">Before &lt/body&gt</option>
+        </select>
+
+        <textarea id="custom_javascript_code" class="bg_yellow" placeholder="Enter your custom Javascript code here"></textarea>
+
+        <div class="code_boxes_buttons">
+            <button class="greenb code_box_save" for-code="javascript">Save</button> <button class="redb code_box_close">Close</button>
+        </div>
+    </div>
+
+    <div id="vgt_custom_css_code_div">
+        <textarea id="custom_css_code" class="bg_blue" placeholder="Enter your custom css here"></textarea>
+
+        <div class="code_boxes_buttons">
+            <button class="greenb code_box_save" for-code="css">Save</button> <button class="redb code_box_close">Close</button>
+        </div>
+    </div>
+
+    <div id="vgt_outer_background_div">
+        <label class="label label-info">Select background type</label>
+        <select class="form-control">
+            <option value=""></option>
+            <option value="image">Image</option>
+            <option value="color">Solid color</option>
+        </select>
+
+        <div class="vgt_hidden bg_value">
+            <label class="label label-info">Insert your OUTER background image's URL below</label>
+            <input class="form-control" type="text" for="image_value" placeholder="Insert your background URL here" />
+        </div>
+
+
+        <div class="vgt_hidden bg_value">
+            <label class="label label-info">Set color for your INNER box</label>
+            <input class="form-control" type="color" for="color_value" />
+        </div>
+
+        <div class="code_boxes_buttons">
+            <button class="greenb code_box_save" for-code="outer_bg">Save</button> <button class="redb code_box_close">Close</button>
+        </div>
+    </div>
+
+    <div id="vgt_inner_background_div">
+        <label class="label label-info">Select background type</label>
+        <select class="form-control">
+            <option value=""></option>
+            <option value="color">Solid color</option>
+        </select>
+
+        <!-- value boxes -->
+        <div class="vgt_hidden bg_value">
+            <label class="label label-info">Insert your INNER background image's URL below</label>
+            <input class="form-control" type="text" for="image_value" placeholder="Insert your background URL here" />
+        </div>
+
+
+        <div class="vgt_hidden bg_value">
+            <label class="label label-info">Set color for your INNER box</label>
+            <input class="form-control" type="color" for="color_value" />
+        </div>
+        <!-- end value boxes -->
+
+        <div class="code_boxes_buttons">
+            <button class="greenb code_box_save" for-code="inner_bg">Save</button> <button class="redb code_box_close">Close</button>
+        </div>
+    </div>
+
+</div>
+<!-- CODE PANEL -->
+
+
+
+<!-- notication for all pages -->
+<div id="sq_bgt_general_notification"></div>
+<div id="crazy_vgt">
+<div id="button_editor"></div>
+</div>
+<div id="vgt_shortcode" style="display: none;"></div>
+<ul id="custom_button_js_code" style="display: none;"></ul>

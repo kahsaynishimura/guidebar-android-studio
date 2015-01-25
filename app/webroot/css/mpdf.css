@@ -1,0 +1,34 @@
+/*this document contains all the specific style for the pdf pages*/
+a{
+    color:#dc1c4f;
+}
+
+table{
+    border-collapse: separate;
+    border-spacing: 3px;
+}
+table tr td {
+    padding: 2px 2px;
+    vertical-align: middle;
+    text-align: center;
+    border:1px solid #dc1c4f;
+    font-size: 70%;
+}
+table tr td a{
+    color: #dc1c4f;
+}
+.logo{
+    height:20px;
+    padding: 5px 0;
+    margin:0;
+}
+
+/*tabela de participantes*/
+#table_attendees{
+    border-collapse: collapse;
+    font-size: 150%;
+}
+#table_attendees tr th{
+    text-align: center;
+    color:  #dc1c4f;
+}

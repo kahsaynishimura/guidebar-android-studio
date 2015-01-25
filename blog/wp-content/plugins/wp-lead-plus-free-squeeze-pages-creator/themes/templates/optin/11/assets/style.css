@@ -1,0 +1,107 @@
+
+/* HTML5 display-role reset for older browsers */
+#vgt_outer_container article, #vgt_outer_container aside, #vgt_outer_container details, #vgt_outer_container figcaption, #vgt_outer_container figure, #vgt_outer_container 
+footer, #vgt_outer_container header, #vgt_outer_container hgroup, #vgt_outer_container menu, #vgt_outer_container nav, #vgt_outer_container section {
+	display: block;
+}
+#vgt_outer_container  {
+	line-height: 1;
+}
+#vgt_outer_container ol, #vgt_outer_container ul {
+	list-style: none;
+}
+blockquote, #vgt_outer_container q {
+	quotes: none;
+}
+blockquote:before, #vgt_outer_container blockquote:after, #vgt_outer_container
+q:before, #vgt_outer_container q:after {
+	content: '';
+	content: none;
+}
+#vgt_outer_container table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*  END CSS RESETS  */
+
+
+#vgt_outer_container {
+	font-family: Helvetica, Arial, sans-serif;
+	margin: 0;
+	border: 1px solid #dedede;
+	padding: 0;
+	font-size: 16px;
+	border-radius: 10px;
+	background: #fff;
+	text-align: center;
+	width: 520px;
+	margin: auto;
+	text-align: center;
+	max-width: 100%;
+}
+
+#vgt_outer_container  * {
+	max-width: 100%;
+}
+
+
+#vgt_outer_container .vgt_big_head {
+	font-size: 1.8em;
+	padding: 20px 20px 10px;
+	margin-top: 20px;
+
+}
+
+#vgt_outer_container .vgt_sub_head {
+	font-size: 1.1em;
+	padding: 0 5px;
+
+}
+
+#vgt_outer_container form input, #vgt_outer_container form button {
+	width: 82%;
+	margin: 5px auto 10px;
+	display: block;
+	text-align: center;
+
+}
+
+#vgt_outer_container form input:focus{
+	outline: none;
+}
+
+#vgt_outer_container form input[type=text], #vgt_outer_container form input[type=email], #vgt_outer_container form input[type=number] {
+	width: 82%;
+	margin: 5px auto 10px;
+	display: block;
+	padding: 15px 0;
+	font-size: 1em;
+	color: #888;
+	border: 1px solid #dedede;
+
+}
+
+#vgt_outer_container form input[type=button], #vgt_outer_container form input[type=submit], button {
+
+	background-color:#ff873d ;
+	-moz-border-radius:6px ;
+	-webkit-border-radius:6px ;
+	border-radius:6px ;
+	border:1px solid #c74c00 ;
+	display:inline-block ;
+	cursor:pointer ;
+	color:#ffffff ;
+	font-family:arial ;
+	text-decoration:none ;
+	padding: 20px 15px;
+	font-size: 1.1em;
+
+}
+
+#vgt_outer_container .vgt_privacy {
+	font-size: .9em;
+	font-style: italic;
+	color: #d9d9d9;
+	margin-bottom: 20px;
+}

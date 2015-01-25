@@ -1,0 +1,357 @@
+/* Options Framework Admin Styles */
+
+.updated {
+	max-width:764px;
+	margin-bottom:0px !important;
+}
+#optionsframework {
+	position:relative;
+	z-index: 0;
+	background:#F5F5F5;
+}
+#optionsframework h3 {
+	cursor: default;
+	height: 25px;
+	font-family:Arial, Helvetica, sans-serif;
+	color: #FFF;
+	height: 25px;
+	font-size: 20px;
+	text-align: center;
+    text-shadow: 0 1px #000000;
+	background: #0cb9e4;
+	text-shadow: none;
+	text-transform: uppercase;
+}
+#optionsframework p {
+	margin-bottom:0;
+	padding-bottom:10px;
+	line-height: 1.4em;
+}
+#optionsframework .section {
+	padding:10px 10px 0 15px;
+}
+#optionsframework .group {
+	background: url("../images/d5logo.png") no-repeat scroll center bottom transparent;
+    padding-bottom: 90px;
+}
+#optionsframework .section .heading {
+	padding:10px 0px;
+	margin:0 0 15px;
+	border-bottom: 1px solid #dfdfdf;
+}
+#optionsframework .section .controls {
+	float: left;
+	min-width:350px;
+	width: 54%;
+	padding-right:2%;
+}
+#optionsframework .section .explain {
+	max-width:38%;
+	float: left;
+	font-size: 12px;
+	line-height:16px;
+	color: #777;
+}
+#optionsframework .section-checkbox .controls {
+	width: 98%;
+}
+#optionsframework .section-checkbox .explain {
+	max-width:94%;
+}
+#optionsframework .of-input {
+	width:100%;
+}
+#optionsframework .controls select, #optionsframework .controls textarea {
+	margin-bottom:10px;
+	width:100%;
+}
+#optionsframework .section-radio label, #optionsframework .section-multicheck label {
+	float:left;
+	max-width:90%;
+	line-height: 16px;
+	margin-bottom: 5px;
+}
+#optionsframework input.checkbox, #optionsframework input.of-radio {
+	width: 30px;
+	margin-top:2px;
+	float:left;
+	clear:both;
+}
+#optionsframework .section-typography .controls {
+	float:none;
+	width:auto;
+}
+#optionsframework .section-typography .explain {
+	float:none;
+	width:auto;
+}
+#optionsframework .controls .of-typography-size {
+	width:80px;
+	float:left
+}
+#optionsframework .controls .of-typography-unit {
+	width:50px;
+	margin-left:5px;
+	float:left
+}
+#optionsframework .controls .of-typography-face {
+	width:100px;
+	margin-left:5px;
+	float:left
+}
+#optionsframework .controls .of-typography-style {
+	width:80px;
+	margin-left:5px;
+	margin-right:5px;
+	float:left
+}
+#optionsframework .of-background-properties {
+	clear:both;
+	margin-top: 18px;	
+}
+#optionsframework .controls .of-background-repeat {
+	width:125px;
+	margin-right:5px;
+	float:left
+}
+#optionsframework .controls .of-background-position {
+	width:125px;
+	margin-right:5px;
+	float:left
+}
+#optionsframework .controls .of-background-attachment {
+	width:125px;
+	margin-right:5px;
+	float:left
+}
+#optionsframework .section-background .wp-picker-container {
+	margin-bottom:10px;
+}
+#optionsframework .controls .of-radio-img-img {
+	border:3px solid #f9f9f9;
+	margin:0 5px 10px 0;
+	display:none;
+	cursor:pointer;
+	float:left;
+}
+#optionsframework .controls .of-radio-img-selected {
+	border:3px solid #ccc
+}
+#optionsframework .controls .of-radio-img-img:hover {
+	opacity:.8;
+}
+#optionsframework .controls .of-border-width {
+	width:80px;
+	float:left
+}
+#optionsframework .controls .of-border-style {
+	width:120px;
+	float:left
+}
+#optionsframework .hide {
+	display:none;
+}
+#optionsframework .of-option-image {
+	max-width:340px;
+	margin:3px 0 18px 0;
+}
+#optionsframework .mini .controls select, #optionsframework .section .mini .controls {
+	width: 140px;
+}
+#optionsframework .mini .controls input, #optionsframework .mini .controls {
+	min-width:140px;
+	width: 140px;
+}
+#optionsframework .mini .explain {
+	max-width:74%;
+}
+
+/* Editor */
+
+#optionsframework .section-editor .explain {
+	max-width: 98%;
+	float:none;
+	margin-bottom:5px;
+}
+
+/* Image Uploader */
+
+#optionsframework .controls input.upload {
+	width:80%;
+}
+#optionsframework .controls input.upload_button {
+	float:right;
+	border-color:#BBBBBB;
+	cursor:pointer;
+}
+#optionsframework .controls input.upload_button:hover {
+	border-color:#666666;
+	color:#000;
+}
+#optionsframework .screenshot {
+	float:left;
+	margin-left:1px;
+	position:relative;
+	width:344px;
+	margin-top:3px;
+}
+#optionsframework .screenshot img {
+	background:#FAFAFA;
+	border-color:#ccc #eee #eee #ccc;
+	border-style:solid;
+	border-width:1px;
+	float:left;
+	max-width:334px;
+	padding:4px;
+	margin-bottom:10px;
+}
+#optionsframework .screenshot .remove-image {
+	background:url("../images/ico-delete.png") no-repeat;
+	border:medium none;
+	bottom:4px;
+	display:block;
+	float:left;
+	height:16px;
+	padding:0;
+	position:absolute;
+	left:-4px;
+	text-indent:-9999px;
+	width:16px;
+}
+#optionsframework .screenshot .no_image .file_link {
+	margin-left: 20px;
+}
+#optionsframework .screenshot .no_image .remove-button {
+	bottom: 0px;
+}
+#optionsframework .reset-button {
+	cursor: pointer;
+    float: left;
+    font-size: 15px;
+    height: 40px;
+}
+
+/* Bottom Section */
+
+#optionsframework-submit {
+	padding: 7px 10px;
+	border-top: 1px solid #ECECEC;
+	background-color: #F1F1F1;
+    background-image: -moz-linear-gradient(center top , #F9F9F9, #ECECEC);
+}
+#optionsframework .button-primary {
+	float: right;
+    font-size: 15px;
+    height: 40px;;
+}
+#optionsframework .section:after {
+	content: "";
+	display: table;
+}
+#optionsframework .section:after {
+	clear: both;
+}
+
+/* ----------------------- Custom ---------------------- */
+#optionsframework .donation  {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+#optionsframework .donation a {
+   	text-decoration: none;
+    color: #14aafd;
+}
+
+#optionsframework .featured-area-title {
+   	color: #0EC2EA;
+    float: left;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 0 100px 10px 0;
+    text-shadow: -1px 1px 1px #FFFFFF;
+}
+
+#optionsframework textarea, #optionsframework input[type="text"], #optionsframework input[type="password"], #optionsframework input[type="file"], #optionsframework input[type="email"], #optionsframework input[type="number"], #optionsframework input[type="search"], #optionsframework input[type="tel"], #optionsframework input[type="url"], #optionsframework select {
+    border-color: #CCCCCC;
+    padding: 5px;
+	line-height: 1.5;
+}
+
+
+#optionsframework a.extendlink { float: right; height: 50px; width: 290px; margin-top: -15px; background: url("../../images/extendlogo.png") no-repeat scroll 0 0 / 100% auto transparent; }
+
+#optionsframework-metabox.metabox-holder { float: right;  padding: 0px; width: 850px; margin-bottom: -20px; box-shadow: none; }
+#wpbody-content #optionsframework.postbox { box-shadow: none; margin: none;}
+
+.icon32.icon-appearance, #icon-themes{ display: none; }
+#optionsframework-wrap { background: #DDDDDD; display: block; overflow: hidden; width: 1070px; border-radius: 10px; box-shadow: 0 0 3px 1px #AAAAAA; margin: 20px 0; }
+#optionsframework-wrap h2 { min-height: 60px; /* Old browsers */
+background: url("../images/d5logo.png") no-repeat scroll 30px center #cccccc; /* Old browsers */
+background: url("../images/d5logo.png") no-repeat scroll 30px center, -moz-linear-gradient(top,  #cccccc 0%, #f7f7f7 38%, #f2f2f2 55%, #f5f5f5 100%); /* FF3.6+ */
+background: url("../images/d5logo.png") no-repeat scroll 30px center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cccccc), color-stop(38%,#f7f7f7), color-stop(55%,#f2f2f2), color-stop(100%,#f5f5f5)); /* Chrome,Safari4+ */
+background: url("../images/d5logo.png") no-repeat scroll 30px center, -webkit-linear-gradient(top,  #cccccc 0%,#f7f7f7 38%,#f2f2f2 55%,#f5f5f5 100%); /* Chrome10+,Safari5.1+ */
+background: url("../images/d5logo.png") no-repeat scroll 30px center, -o-linear-gradient(top,  #cccccc 0%,#f7f7f7 38%,#f2f2f2 55%,#f5f5f5 100%); /* Opera 11.10+ */
+background: url("../images/d5logo.png") no-repeat scroll 30px center, -ms-linear-gradient(top,  #cccccc 0%,#f7f7f7 38%,#f2f2f2 55%,#f5f5f5 100%); /* IE10+ */
+background: url("../images/d5logo.png") no-repeat scroll 30px center, linear-gradient(to bottom,  #cccccc 0%,#f7f7f7 38%,#f2f2f2 55%,#f5f5f5 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#f5f5f5',GradientType=0 ); /* IE6-9 */
+border-bottom: 1px solid #f4f4f4;
+color: #06ADD7;
+float: right;
+font-size: 40px;
+font-weight: 700;
+padding: 40px 10px 0;
+text-align: right;
+text-shadow: 1px 1px 0 #FFFFFF;
+width: 100%;
+}
+
+#optionsframework-wrap div.updated p, #optionsframework-wrap div.error p {
+    background: #077991;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 20px;
+    left: 370px;
+    margin: 0 auto;
+    padding: 5px 10px;
+    position: absolute;
+    top: 30px;
+}
+
+#optionsframework-wrap .nav-tab-wrapper { width: 201px; margin-top: 143px; position: absolute; z-index: 100; background: transparent; border: none; text-align:left; padding: 0; margin-right: 850px;}
+#optionsframework-wrap h2 .nav-tab { width: 100%; border: none; border-top: 1px solid #AAAAAA; border-bottom: 1px solid #EEEEEE; color: #06add7;}
+#optionsframework-wrap h2 .nav-tab:hover, #optionsframework-wrap h2 .nav-tab-active { border: none; border-top: 1px solid #EEEEEE; border-bottom: 1px solid #AAAAAA; color: #08718c; background: #F5F5F5; z-index: 100; }
+#optionsframework-wrap h2 .nav-tab { padding: 10px; font-size: 17px; color: #555555; }
+
+#optionsframework-wrap h2 .nav-tab:hover, #optionsframework-wrap h2 .nav-tab-active { background: #0CB9E4; color: #FFFFFF; text-shadow: none;  }
+#optionsframework-wrap h2  .nav-tab-active:after {
+	border: 11px solid transparent;
+    content: " ";
+    height: 0;
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+	border-right-color: #F5F5F5;
+	margin-right: -20px;
+    margin-top: 2px;
+	right: 0;
+}
+
+#optionsframework .sub-item { border-bottom: 3px solid #0EC2EA; }
+#optionsframework .featured-area-sub-title {
+    background:#555555;
+    color: #EEEEEE;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    width: 97%;
+}
+
+#optionsframework .button { min-height: 31px; margin-top: 1.3px; }
+
+.infohead { background:#333333; border: 3px solid #14AAFD; border-radius: 10px; color: #EEEEEE; padding: 10px; text-shadow: -1px -1px 0 #000000; transition:all .75s; -moz-transition:all .75s; -o-transition:all .75s; -webkit-transition:all .75s; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;}
+.infohead:hover { background:#111111; border: 3px solid #ee510c; }
+a.extendlink { float: right; height: 50px; width: 290px; }

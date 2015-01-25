@@ -1,0 +1,112 @@
+#vgt_outer_container div, #vgt_outer_container span, #vgt_outer_container applet, #vgt_outer_container object, #vgt_outer_container iframe, #vgt_outer_container
+h1, #vgt_outer_container h2, #vgt_outer_container h3, #vgt_outer_container h4, #vgt_outer_container h5, #vgt_outer_container h6, #vgt_outer_container p, #vgt_outer_container blockquote, #vgt_outer_container pre, #vgt_outer_container
+a, #vgt_outer_container abbr, #vgt_outer_container acronym, #vgt_outer_container address, #vgt_outer_container big, #vgt_outer_container cite, #vgt_outer_container code, #vgt_outer_container
+del, #vgt_outer_container dfn, #vgt_outer_container em, #vgt_outer_container img, #vgt_outer_container ins, #vgt_outer_container kbd, #vgt_outer_container q, #vgt_outer_container s, #vgt_outer_container samp, #vgt_outer_container
+small, #vgt_outer_container strike, #vgt_outer_container strong, #vgt_outer_container sub, #vgt_outer_container sup, #vgt_outer_container tt, #vgt_outer_container var, #vgt_outer_container
+b, #vgt_outer_container u, #vgt_outer_container i, #vgt_outer_container center, #vgt_outer_container
+dl, #vgt_outer_container dt, #vgt_outer_container dd, #vgt_outer_container ol, #vgt_outer_container ul, #vgt_outer_container li, #vgt_outer_container
+fieldset, #vgt_outer_container form, #vgt_outer_container label, #vgt_outer_container legend, #vgt_outer_container
+table, #vgt_outer_container caption, #vgt_outer_container tbody, #vgt_outer_container tfoot, #vgt_outer_container thead, #vgt_outer_container tr, #vgt_outer_container th, #vgt_outer_container td, #vgt_outer_container
+article, #vgt_outer_container aside, #vgt_outer_container canvas, #vgt_outer_container details, #vgt_outer_container embed, #vgt_outer_container 
+figure, #vgt_outer_container figcaption, #vgt_outer_container footer, #vgt_outer_container header, #vgt_outer_container hgroup, #vgt_outer_container 
+menu, #vgt_outer_container nav, #vgt_outer_container output, #vgt_outer_container ruby, #vgt_outer_container section, #vgt_outer_container summary, #vgt_outer_container
+time, #vgt_outer_container mark, #vgt_outer_container audio, #vgt_outer_container video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+#vgt_outer_container article, #vgt_outer_container aside, #vgt_outer_container details, #vgt_outer_container figcaption, #vgt_outer_container figure, #vgt_outer_container 
+footer, #vgt_outer_container header, #vgt_outer_container hgroup, #vgt_outer_container menu, #vgt_outer_container nav, #vgt_outer_container section {
+	display: block;
+}
+#vgt_outer_container  {
+	line-height: 1;
+}
+#vgt_outer_container ol, #vgt_outer_container ul {
+	list-style: none;
+}
+blockquote, #vgt_outer_container q {
+	quotes: none;
+}
+blockquote:before, #vgt_outer_container blockquote:after, #vgt_outer_container
+q:before, #vgt_outer_container q:after {
+	content: '';
+	content: none;
+}
+#vgt_outer_container table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*  END CSS RESETS  */
+#vgt_outer_container {
+	max-width: 100%;
+	margin: auto;
+	text-align: center;
+	position: relative;
+	min-height: 100px;
+	background: #fff;
+}
+
+#vgt_outer_container .vgt_close_btn {
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	width: 20px;
+	height: 20px;
+	background: url(imgs/close.png) no-repeat;
+	cursor: pointer;
+}
+
+#vgt_outer_container {
+	width: 500px;
+	min-height: 100px;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px 1px #eee;
+}
+
+
+#vgt_outer_container .vgt_pop_header {
+	font-size: 2em;
+	color: #555;
+	text-align: center;
+	margin: auto;
+	padding: 15px 20px;
+	line-height: 1.3em;
+}
+
+
+#vgt_outer_container .vgt_pop_sub_header {
+	font-size: 1.2em;
+	color: #888;
+	text-align: center;
+	margin: auto;
+	padding: 0px 10px 15px;
+	line-height: 1.2em;
+}
+
+
+#vgt_outer_container .vgt_pop_form input[type="button"], #vgt_outer_container .vgt_pop_form input[type="submit"], 
+#vgt_outer_container .vgt_pop_form button, #vgt_outer_container .vgt_pop_form input[type="image"] {
+	cursor: pointer;
+	-webkit-appearance: none;
+	border-radius: 4px;
+	border: 0;
+	background: #C95F61;
+	color: #fdfdfd;
+	font-size: 1.4em;
+	padding: 15px 20px;
+
+}
+
+#vgt_outer_container .vgt_pop_privacy {
+	font-size: .9em;
+	color: #aaa;
+	font-style: italic;
+	padding: 10px 20px 20px;
+
+}

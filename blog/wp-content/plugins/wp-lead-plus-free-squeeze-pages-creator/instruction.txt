@@ -1,0 +1,4 @@
+1. Install the plugin as normal wordpress plugin using upload method
+2. Go to WP Lead Plus menu on the left, you will see a box asks you to enter email to activate.
+3. Enter your payment email and click activate
+4. Done    

@@ -1,0 +1,31 @@
+input[type="text"], input[type="number"]{
+    /*position:relative;*/ 
+    padding: 6px 12px;
+    letter-spacing: 0.5px;
+    color: #000;
+    font-weight:400;
+    vertical-align:middle; 
+    border-color: #d4d4d4;
+    border-style: inset; 
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px; 
+}
+#div_ticket_form ,select ,#div_ticket_form input{
+    font-size: 90%;
+}
+#divAddressForm .form-group{
+    width:100%;
+}
+#ticket_table a{
+    display:inline-block;
+    cursor: pointer;
+    margin-right: 5px;
+    text-decoration: none;
+}
+#divAddressForm label,#divAddressForm select,#divAddressForm input,#divAddressForm .required {
+    display:inline-block;
+}
+#divAddressForm label {
+    width:20%; 
+}

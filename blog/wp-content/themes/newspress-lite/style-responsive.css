@@ -1,0 +1,23 @@
+/* NewsPress Theme by D5 Creation, www.d5creation.com
+/* =Responsive Design 
+-------------------------------------------------------------- */
+@media screen and (max-width:1250px){
+body { min-width: 1000px; } #site-container { width: 95%; overflow: hidden; } img.site-logo, h1.site-title { max-width: 90%; } .fpec { height: 21vw; } .fpgcontainer { height: 31vw; } .fpmost-read { height: 53vw; } #right-sidebar { line-height: 1.25; } #right-sidebar.slider-sidebar .widget { min-width: 170px; } #newspress-main-menu a { padding: 10px; } table#wp-calendar, #wp-calendar a { font-size: 70%; }
+}
+
+@media screen and (max-width:1000px){
+#site-container { width: 97%; }
+}
+
+@media screen and (max-width:900px){
+body { min-width: 900px; } img.site-logo, h1.site-title { float: left; max-width: 35%; }  .topadlft, .topadrt { display: block; margin-right: 10px; float: right; } .fpec { height: 30vw; } .fpgcontainer { height: 34vw; } .fpmost-read { height: 65vw; } .fpgallery { height: 33vw; } .heading-date { text-align: left; } #top-menu-container { height: 70px; } #top-menu-container #searchform { margin-top: 30px;  } ul.lboxd { margin-top: 30px; float: none;  }  #newspress-top-menu { max-width: 100%;} #social { position: relative; top: 0; margin-top: -20px;  }
+}
+
+@media screen and (max-width:700px){ body { min-width: 700px; } img.site-logo, h1.site-title { max-width: 50%; } .topadlft { display: none; margin-right: 0px; }  #content { width: 100%; }#right-sidebar { float: left; width: 100%; padding: 0; min-width: 200px; } #right-sidebar .widget { clear: none; display: inline-block; float: left; margin:0 5% 10px 0;  width: 45%; min-width: 200px; } #content #right-sidebar.slider-sidebar { float: right;width: 25%; min-width: 0; } #right-sidebar.slider-sidebar .widget { float: right; }
+.fpage-cat  { min-width: 200px; width: 45%;  }  .fpgallery, .fpec, .fpmost-read { display: none; } #wp-calendar a { font-size: 100%; }
+}
+
+@media screen and (max-width:500px){ body { min-width: 100%; } .fsubheading { width: 94% } img.site-logo, h1.site-title { max-width: 70%; } #slide-container, #right-sidebar.slider-sidebar, #top-menu-container, .topadrt, a.go-top, .post-meta { display: none; } #right-sidebar .widget, .fpage-cat, #footer-sidebar .first-widget, #footer-sidebar .widgets, .special-cat-sub, a.post-edit-link{ width: 100%; margin: 10px 0; }
+
+}
+

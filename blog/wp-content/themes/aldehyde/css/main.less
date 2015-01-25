@@ -1,0 +1,799 @@
+@import "../fonts/font-awesome/less/font-awesome.css";
+
+/* Table of Contents
+------------------------------------------------------- *
+
+	0. Bootstrap Fixes
+	1. Less Variables & Mixins
+	2. Top Bar
+	3. Header
+	4. Links
+	5. Navigation Menu
+	6. Slider
+	7. Content
+		7.1. Primary
+		7.2. Secondary
+	8. Pagination
+	9. Footer
+	10. HTML Markup and Formatting
+	11. Widgets Style
+	12. Comments
+	
+/* 0. Bootstrap Fixes
+-------------------------------------------------------	*/
+body {
+	background: #E3E3E3;
+}
+#main {
+	width: 100%;
+}
+.container {
+	margin: auto;
+}
+code {
+	white-space: pre-wrap !important;
+}
+.navbar-default .navbar-nav>li>a {
+	color: none;
+	&:hover {
+		color: none;
+	}
+}
+
+/* 1. Less Variables & Mixins
+-------------------------------------------------------	*/
+
+@default-background: #FFF;
+@link-color: #918F93;
+@link-hover-color: #89DB52;
+@menu-bar-bg: #FFF;
+@menu-hover: #EEE;
+@top-bar-bg: #DFDFDF;
+
+.font {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+#parallax-bg {
+	position: fixed;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+}
+#page {
+	position: relative;
+	z-index: 888;
+}
+
+/* 2. Top Bar
+------------------------------------------------------- */
+#top-bar {
+	background: @top-bar-bg;
+	padding: 5px 0px;
+	position: relative;
+	z-index: 99999;
+	opacity: 0.8;
+	&:hover {
+		opacity: 1.0;
+	}
+}
+#social-icons {
+	float: right;
+	text-align: right;
+}
+.social-icon {
+	color: darken(@link-color, 10%);
+	font-size: 28px;
+	margin-right: 2px;
+	position: relative;
+		top: 0px;
+		left: 0px;
+	transition: ease 0.4s all;		
+	&:hover {
+		color: @link-hover-color;
+		text-shadow: 3px 3px 1px @link-color;
+			top: -2px;
+			left: -2px;
+	}
+}
+a:hover .social-icon {
+	text-decoration: none;
+}
+#top-search {
+	position: relative;
+	top: 2px;
+	left: -15px;
+	z-index: 999;
+	
+	input[type=text] {
+		background: darken(@top-bar-bg,2%);
+		outline: none;
+		border: none;
+		box-shadow: inset 0px -1px 1px darken(@top-bar-bg,10%);
+		width: 300px;
+		padding-left: 30px;
+		&:hover,&:focus {
+			background: darken(@top-bar-bg,10%);
+		}
+	}
+	::-webkit-input-placeholder {
+			color: darken(@link-color,10%);
+	}
+	:-moz-placeholder { /* Firefox 18- */
+	   color: darken(@link-color,10%);;  
+	}
+	
+	::-moz-placeholder {  /* Firefox 19+ */
+	   color: darken(@link-color,10%);;  
+	}
+	
+	:-ms-input-placeholder {  
+	   color: red;  
+	}
+	button {
+		position: relative;
+		padding: 2px 5px;
+		background: none;
+		border: none;
+		-webkit-linear-gradient: none;
+		top: -2px;
+		box-shadow: none;
+		right: -30px;
+		color: darken(@link-color,15%);
+	}
+}
+
+/* 3. Header
+------------------------------------------------------- */
+body {
+	.font;
+}
+#masthead {
+	margin: 40px auto;	
+}
+.site-title {
+	.font;
+	position: relative;
+	top: -10px;
+	a {
+		color: black;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+.main_logo {
+	max-width: 360px;
+}
+@media screen and (max-width: 992px) {
+	.site-title,#top-search, #social-icons {
+		text-align: center;
+		float: none;
+		padding: 15px 5px;
+	}
+	.site-title {
+		margin-top: -5px;
+	}
+	#social-icons, #top-search {
+		padding: 10px 5px;
+	}
+}
+
+/* 4. Links
+------------------------------------------------------- */
+
+a {
+	color: @link-color;
+}
+a:hover,
+a:focus,
+a:active {
+	color: @link-hover-color;
+}
+
+/* 5. Navigation Menu 
+-------------------------------------------------------	*/
+
+/* Default Navigation */
+
+#site-navigation {
+	clear: both;
+	display: block;
+	float: right;
+	display: inline-block;
+	background: @menu-bar-bg;
+	margin-bottom: 30px;
+	padding-bottom: 0px;
+	// set up the right arrows first
+   .menu li > a:after { 
+   		content: '\f0da';
+   		font-family: "FontAwesome";
+   		padding: 5px 0;
+   		font-size: 10px;
+   		float: right;
+   	}
+   	.menu li a:before {
+	   	content: "";
+	   	font-family: "FontAwesome";
+   	}
+   //set up the downward arrow for top level items
+   .menu > li > a:after {
+   		content: '\f0d7';
+   		font-family: "FontAwesome";
+   		padding: 5px;
+   		font-size: 10px;
+    }
+    div.menu > ul > li > a:after {
+	    content: '\f0d7';
+   		font-family: "FontAwesome";
+   		padding: 5px;
+   		font-size: 10px;
+    }
+
+   //clear the content if a is only child
+   .menu li > a:only-child:after {
+   		content: '';
+   	}
+   	.current_page_item > a {
+		background: @menu-hover;
+		border-top: solid 3px #222;
+		padding-top: 12px; 
+	}
+	ul {
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+		padding-bottom: 0px;
+		li:hover > ul { /* Dropdown*/
+				display: block;
+			}
+		ul {
+			display: none;
+			float: left;
+			position: absolute;
+				top: 3.4em;
+				left: 0;
+			z-index: 99999;
+			background: @menu-hover;
+			ul {
+				border: solid 1px darken(@menu-hover,10%);
+				left: 100%;
+				top: 0;
+			}
+			a {
+				min-width: 200px;
+				max-width: 255px;
+				font-size: 14px;
+				font-weight: normal;
+				color: #555;
+				padding: 8px 20px;
+				&:hover {
+					border-top: none;
+					background: #333;
+					color: #eee;
+					padding: 8px 20px;
+				}
+			}
+		}
+	}
+	li {
+		float: left;
+		position: relative;
+		clear: right;
+	}
+	a {
+		display: block;
+		text-decoration: none;
+		color: @link-color;
+		text-decoration: none;
+		padding: 16px 15px;
+		font-weight: normal;
+		&:hover {
+			background: #f3f3f3;
+			border-top: #0C9 solid 4px;
+		}
+	}
+	li:hover > a {
+			background: @menu-hover;
+			border-top: @link-hover-color solid 4px;
+			padding-top: 12px;
+			color: black;
+		}
+	ul ul li:hover > a {
+		background: @menu-bar-bg;
+		border-top: none;
+		padding: 8px 20px;
+		color: black;
+	}	
+	
+}
+
+/* Small menu */
+.menu-toggle {
+	display: none;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+	.menu-toggle,
+	.main-navigation.toggled .nav-menu {
+		display: block;
+		font-size: 14px;
+		height: 40px;
+		&:before {
+		}
+		ul:before {
+			content: "";
+		}
+		clear: none;
+	}
+	.menu-toggle:before {
+		content: "\f0ca";
+			font-family: "FontAwesome";
+			float: right;
+			font-size: 27px;
+			padding: 0px 30px 10px 10px;
+	}
+	.td_mobile_menu_wrap {
+		text-align: center;
+		float: left;
+		margin-top: -46px;
+		width: 80%;
+		display: none;
+	}
+	.mobileMenu {
+		margin-bottom: 10px;
+		text-align: left;
+		width: 80%;
+	}
+}
+@media screen and (max-width:1100px) {
+	#site-navigation {
+		float: none;
+		width: 100%;
+		margin: auto;
+	}
+}
+
+
+/* 6. Slider
+-------------------------------------------------*/
+
+.slider-wrapper {
+	margin: auto;
+	margin-top: 15px;
+	background: fade(white,80%);
+	padding-top: 15px;
+	margin-bottom: 40px;
+}
+.slide-title {
+	.font;
+	color: #ddd;
+}
+.nivo-caption {
+  max-width: 750px;
+  min-width: 200px;
+  overflow: hidden;
+  bottom: 15px;
+  left: 10px;
+}
+.nivo-html-caption {
+	display: none;
+}
+div.slide-title {
+	font-size: 36px;
+	display: block; 
+}
+div.slide-description {
+	 font-family: Helvetica, Arial, sans-serif;
+}
+.nivo-imageLink {
+	z-index: 99999;
+}
+@media screen and (max-width: 768px) {
+	div.slide-title {
+		font-size: 18px;
+	}
+	div.slide-description {
+		font-size: 13px;
+	}
+}
+
+
+/* 7. Content 
+------------------------------------------------------- */
+
+#content {
+	background: white;
+	border-top: solid 4px @top-bar-bg;
+	padding: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+/* 7.1 Primary 
+------------------------------------------------------- */
+
+#primary {
+	padding: 0 15px;
+	.icon-time:before ,.icon-user:before {
+			color: @link-color !important;
+		}
+	.byline {
+		display: inline;
+	}		
+}
+article.archive {
+	
+.article-rest {
+		 margin: auto;	
+		 }
+}
+
+.featured-thumb {
+	margin: auto;
+	margin-top: 35px;
+	overflow: hidden;
+	width: 95%;
+	padding: 0px; 
+	.img-meta {
+		position: absolute;
+		z-index: 9999;
+		background: fade(@link-hover-color,0%);
+		width: 100%;
+		height: 100%;
+		left: 0px;
+		display: none;
+		text-align: center;
+		.meta-icon {
+			display: inline-block;
+			font-size: 24px;
+			width: 36px;
+			background: darken(@link-hover-color, 25%);
+			border-radius: 4px;
+			margin-top: 100px;
+		}
+		.meta-link {
+			padding: 15px 25px;
+			color: darken(@link-color, 20%);
+			&:hover {
+				color: @link-hover-color;
+				text-decoration: none;
+			}
+			i {
+				position: relative;
+					left: -19px;	
+			}
+			.icon-link {
+				left: -17px;
+			}
+		}
+	}
+	&:hover {
+		.img-meta {
+			background: fade(@link-hover-color,65%);
+		}
+		img {
+			-webkit-transform: scale(1.05);
+			opacity: 0.8;
+		}
+	}
+	img {
+		box-shadow: 0px 1px 2px #444;
+		border-top: solid 5px fade(@link-hover-color,80%);
+		margin-bottom: 0px;
+		transition: 0.4s all ease;
+		min-width: 100%;
+		height: auto; 
+	}
+}
+.archive {
+	.entry-title a {
+		font-size: 26px;
+		color: darken(@link-color,80%);
+		&:hover {
+			color: @link-hover-color;
+		}
+	}
+	.entry-meta {
+		font-size: small;
+		color: @link-color;
+		.posted-on {
+			margin-right: 6px;
+		}
+	}
+}
+.featured-image-single {
+	text-align: center;
+	img {
+		max-width: 80%;
+		border: solid 5px lighten(@menu-bar-bg,30%);
+		box-shadow: 0px 2px 2px #888;
+		margin-bottom: 15px;
+	}
+}
+
+@media screen and (max-width:480px) {
+	.featured-thumb {
+		.img-meta {
+			.meta-icon {
+				margin-top: 30px;
+			}
+		}
+	}
+}
+/* 7.2 Secondary 
+------------------------------------------------------- */
+
+#secondary {
+	padding: 20px 10px;
+	ul {
+		list-style: none;
+		margin-left: 5px;
+		li:before {
+			margin-right: 5px;
+			content:"\f0da";
+			font-family: "FontAwesome";
+			color: @link-color;
+		}
+		ul {
+			li:before {
+				content: "\f111";
+				font-size: 5px;
+				position: relative;
+				top: -3px;
+			}
+			margin-left: 15px;
+			ul {
+				margin-left: 5px;
+				
+			}
+		}
+	}
+	.widget_recent_entries {
+		li:before {
+			content: "\f0f6";
+		}
+		li {
+			border-bottom: solid 1px lighten(@link-color, 40%);
+			padding: 5px 0px;
+		}
+	}
+	.widget_recent_comments {
+		li:before {
+			content: "\f075";
+			font-size: 12px;
+			position: relative;
+			top: -2px;
+		}
+	}
+	.widget_calendar {
+		caption {
+			font-weight: bold;
+			margin-bottom: 7px;
+		}
+		table {
+			padding: 5px;
+			text-align:center;
+			background: #fff;
+		}
+		thead {
+			border-bottom: solid 1px @link-hover-color;
+			th {
+				background: #ddd;
+				padding: 5px;
+				text-align: center;
+			}
+		}
+		tr td {
+			padding: 8px !important;
+			background: #eee;
+			margin: 4px;
+			text-align: center;
+		}
+		#prev {
+			text-align: left;
+		}
+		#next {
+			text-align: right;
+		}
+	}
+	h1.widget-title {
+		font-size: 20px;
+		font-weight: normal;
+		border-bottom: solid 4px @link-hover-color;
+		background: #fafafa;
+		padding: 5px;
+		margin-top: 0px;
+	}
+	.widget_search {
+		form {
+			padding: 10px 5px;
+		}
+		input[type=submit] {
+			display: inline-block;
+		}
+		input[type=text] {
+			display: block;
+			width: 250px !important;
+			position: relative;
+			left: 30px;
+		}
+	}
+	select#cat {
+		margin-bottom: 10px;
+		margin-left: 10px;
+	}
+	.widget {
+		background: #fafafa;
+		border: solid 1px #eee;
+		margin-top: 15px;
+		padding-top: 0px;
+	}
+	.widget > div {
+		padding: 7px;
+	}
+}
+
+/* 8. Pagination
+-----------------------------------------------*/
+.pagination {
+    margin: 20px 0;
+    width: 100%;
+    margin-left: -20px;
+    text-align: center;
+    clear: both;
+    ul {
+        list-style: none;
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 0;
+        & > li {
+            display: inline;
+            & > a {
+                color: @menu-hover;
+                transition: all 0.4s ease;
+                .next {
+	                float: right;
+                }
+            }
+            & > a:hover {
+                color: @link-color;
+                background: #eee;
+            }
+        }
+    }
+    .current {
+        background: saturate(@link-hover-color, 5%);
+    }
+}
+.pagination ul &>li &>a, .pagination ul &>li &>span {
+    float: left;
+    padding: 4px 12px;
+    line-height: 20px;
+    text-decoration: none;
+    background-color: lighten(@default-background, 10%);
+    border: solid 1px #f1f1f1;
+    border-left-width: 0;
+    display: inline-block;
+    color: desaturate(@link-color, 40%);
+}
+.pagination ul &>li:first-child &>a, .pagination ul &>li:first-child &>span {
+    border-left-width: 1px;
+}
+
+.pagination ul &>li:last-child &>a, .pagination ul &>li:last-child &>span {
+    border-rigth-width: 1px;
+}
+
+
+/* 9. Footer 
+------------------------------------------------------- */
+
+#colophon {
+	background: @menu-bar-bg;
+	padding: 10px;
+	border-top: solid 1px #ddd;
+	border-bottom: solid 4px #ddd;
+	width: auto;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+#footertext {
+	float: right;
+	text-align: right;
+}
+
+/* 9. HTML Markup & Formatting
+--------------------------------------------------- */
+
+article {
+	table {
+		background: #f7f7f7;
+		td {
+			padding: 5px;
+			border: solid 1px #eee;
+		}
+		th {
+			padding: 5px;
+			background: #ccc;
+			border: solid 1px #ccc;
+		}
+		thead {
+			
+		}
+	}
+}
+
+/* 11. Widgets Style
+---------------------------------------------------- */
+
+.rp-item {
+	display: block;
+	clear: both;
+	overflow: auto;
+	margin-bottom: 5px;
+	border-bottom: solid 1px lighten(@link-color, 40%);
+	padding-bottom: 5px;
+}
+.rp-item:before {
+	content: none !important;
+}
+.rp-thumb {
+	float: left;
+	width: 64px;
+	margin-right: -5px;
+	margin-top: 3px;
+	img {
+	width: 48px;
+	border: solid 2px #eee;
+	border-radius: 2px;
+	}
+	rp-title {	
+	clear: none;
+		a {
+		display: block;
+		}
+	}
+}
+
+/* 12. Comments
+---------------------------------------------------------- */
+ 
+ #respond {
+	 input[type=text] {
+		 max-width: 450px;
+	 }
+ }
+ 
+ #comments {
+	 ol.comment-list {
+		 list-style: none;	 
+	 }
+	 li.comment {
+		 border: solid 1px #eee;
+		 padding: 10px;
+		 margin-top: 15px;
+		 list-style: none;
+		 background: #f9f9f9;
+	 }
+	 .vcard img {
+		 border: solid 4px @menu-bar-bg;
+		 border-radius: 5px;
+		 margin: 0 10px 10px 0;
+	 }
+	 .comment-metadata {
+		 font-weight: bold;
+	 }
+ }
+ @media screen and (max-width:480px) {
+	 li.comment {
+		 margin-left: -5%;
+	 }
+ }
+
+
+
+

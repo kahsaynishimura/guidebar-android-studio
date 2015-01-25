@@ -1,0 +1,52 @@
+#adminmenu li#toplevel_page_egoi-mail-list-builder-info .wp-menu-image,
+#adminmenu li#toplevel_page_egoi-mail-list-builder-lists .wp-menu-image,
+#adminmenu li#toplevel_page_egoi-mail-list-builder-widget-settings .wp-menu-image,
+#adminmenu li#toplevel_page_egoi-mail-list-builder-settings .wp-menu-image{
+	background: transparent url('../img/egoi-mail-list-builder-menuicon-56px.png') no-repeat 0 0;
+	overflow: hidden;
+}
+
+#adminmenu li#toplevel_page_egoi-mail-list-builder-info:hover .wp-menu-image,
+#adminmenu li#toplevel_page_egoi-mail-list-builder-info.current .wp-menu-image,
+#adminmenu li#toplevel_page_egoi-mail-list-builder-info.wp-has-current-submenu .wp-menu-image,
+#adminmenu li#toplevel_page_egoi-mail-list-builder-lists:hover .wp-menu-image,
+#adminmenu li#toplevel_page_egoi-mail-list-builder-lists.current .wp-menu-image,
+#adminmenu li#toplevel_page_egoi-mail-list-builder-lists.wp-has-current-submenu .wp-menu-image,
+#adminmenu li#toplevel_page_egoi-mail-list-builder-widget-settings:hover .wp-menu-image,
+#adminmenu li#toplevel_page_egoi-mail-list-builder-widget-settings.current .wp-menu-image,
+#adminmenu li#toplevel_page_egoi-mail-list-builder-widget-settings.wp-has-current-submenu .wp-menu-image,
+#adminmenu li#toplevel_page_egoi-mail-list-builder-settings:hover .wp-menu-image,
+#adminmenu li#toplevel_page_egoi-mail-list-builder-settings.current .wp-menu-image,
+#adminmenu li#toplevel_page_egoi-mail-list-builder-settings.wp-has-current-submenu .wp-menu-image{
+	background-position: -28px 0;
+}
+
+#icon-egoi-mail-list-builder-info,
+#icon-egoi-mail-list-builder-lists,
+#icon-egoi-mail-list-builder-widget-settings,
+#icon-egoi-mail-list-builder-settings {
+	background-image: url('../img/egoi-mail-list-builder-pageicon-32px.png');
+	background-repeat: no-repeat;
+}
+
+@media print,
+	(-o-min-device-pixel-ratio: 5/4),
+	(-webkit-min-device-pixel-ratio: 1.25),
+	(min-resolution: 120dpi) {
+		
+		#icon-egoi-mail-list-builder-info,
+		#icon-egoi-mail-list-builder-lists,
+		#icon-egoi-mail-list-builder-widget-settings,
+		#icon-egoi-mail-list-builder-settings {
+			background-image: url('../img/egoi-mail-list-builder-pageicon-64px.png');
+			background-size: 32px 32px;
+		}
+
+		#adminmenu li#toplevel_page_egoi-mail-list-builder-info .wp-menu-image,
+		#adminmenu li#toplevel_page_egoi-mail-list-builder-lists .wp-menu-image,
+		#adminmenu li#toplevel_page_egoi-mail-list-builder-widget-settings .wp-menu-image,
+		#adminmenu li#toplevel_page_egoi-mail-list-builder-settings .wp-menu-image {
+			background-image: url('../img/egoi-mail-list-builder-menuicon-112px.png');
+			background-size: 56px 28px;
+		}
+	}

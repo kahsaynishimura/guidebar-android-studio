@@ -1,0 +1,97 @@
+﻿<!-- EDIT PANEL -->
+<div id='buttons_panel'></div>
+<div id='bgs_panel'></div>
+<div id='posts_panel'></div>
+
+
+<div id="gallery_panel" class="vgt_vertical_menu">
+	<input type="button" value="With Opt-in" id="withOptin" class="blueb" />
+	<input type="button" value="No Opt-in" id="noOptin" class="greenb" />
+</div>
+
+
+<div id="editing_panel" class="vgt_vertical_menu">
+
+	<input type="button" value="Add" id="vgt_addb" class="blueb" />
+	<input type="button" value="Remove" id="vgt_removeb" class="redb" />
+	<!--  <input type="button" value="Undo" id="vgt_undob" class="blueb" />   -->
+	<input type="button" value="Outer BG" id="vgt_outer_background" class="greenb" />
+	<input type="button" value="Box BG" id="vgt_inner_background" class="orangeb" />
+    <input type="button" value="Start Drag" id="vgt_enable_drag" class="redb" />
+    <input type="button" value="Enable Resize" id="vgt_enable_resize" class="orangeb" />
+	<input type="button" value="Reset Position" id="vgt_resetb" class="navyb" />
+    <input type="button" value="Edit Page" id="vgt_editpageb" class="violetb" />
+</div>
+
+<div id="code_panel" class="vgt_vertical_menu">
+	<input type="button" value="Media" id="code_mediab" class="blueb" />
+	<input type="button" value="Email" id="code_emailb" class="redb" />
+	<input type="button" value="CSS Code" id="code_custom_css_btn" class="orangeb"/>
+    <input type="button" value="JS Code" id="code_custom_js_btn" class="greenb" />
+</div>
+
+<!-- FOOTER PANEL -->
+<div id="foot_panel">
+
+	<div id="buttons_right">
+		<input type="button" value="Edit this" id="editthispageb" class="blueb vgt_edit_btn"  style="display:none;"/>
+		<input type="button" value="Edit this" id="editthisb" class="blueb vgt_edit_btn" style="display:none;" />
+		<input type="button" value="Save" id="publishb" class="redb" style="display:none;"/>
+		<input type="button" value="Code" id="codeb" class="blueb" />
+		<input type="button" value="Edit" id="editb" class="greenb" />
+		<input type="button" value="Select" id="selectb" class="orangeb" />
+		<!-- <input type="button" value="Hide" id="hideb" class="navyb" />  -->
+	</div>
+	
+	<div id="save_buttons" class="vgt_hidden vgt_vertical_menu">
+        <input type="button" value="Publish" id="publish_post" save_action="publish" class="orangeb"/>
+        <input type="button" value="Draft" save_action="draft" id="draft_post" class="navyb"/>
+        <div class="vgt_clear"></div>
+
+	</div>
+	<!-- HIDDEN FIELD -->
+
+		<div id="current_id" style="display:none;"></div>
+		<div id="container_id" style="display:none;"></div>
+		
+		<div id="current_theme_url" style="display: none;"></div>
+		<div id="selected_theme" style="display:none;"></div>
+		<div id="current_theme_name" style="display: none;">1</div> <!-- this seems to be dup with the selected theme but not -->
+		<div id="current_sub_theme" style="display: none;">1</div>
+		<div id="current_theme_type" style="display: none;">video</div>
+
+		<div id="sq_temp_edit_text" style="display:none;"></div>
+		<div id="sq_current_post_id" style="display:none;"></div> <!-- replace the current session variable -->
+		<ul id="sq_remove_history" style="display:none;"></ul>
+		<div id="sq_user_js_code" style="display: none;"></div>
+		<ul style="display: none;" id="sq_custom_javascript"></ul>
+		<div id="vgt_page_type" style="display:none;">squeeze</div>
+		
+	<!-- END HIDDEN FIELD -->
+</div>
+
+<!-- END FOOTER PANEL -->
+
+<div id="vgt_outer_background_settings" class="vgt_gallery"> <!-- Box for setting background color of inner box of squeeze page, popup, widget -->
+    <select id="vgt_outer_background_settings_type">
+        <option value=""></option>
+        <option value="outer_solid_color">Solid color</option>
+        <option value="outer_image_pattern">Image pattern</option>
+        <option value="outer_image">Image</option>
+    </select>
+
+    <div class="vgt_hidden">
+        <label class="label label-info">Select color</label>
+        <input type="color" id="outer_solid_color_value" />
+    </div>
+
+    <div class="vgt_hidden">
+        <label class="label label-info">Image pattern URL</label>
+        <input type="color" id="outer_image_pattern_value" />
+    </div>
+
+    <div class="vgt_hidden">
+        <label class="label label-info">Image URL</label>
+        <input type="color" id="outer_image_value" />
+    </div>
+</div>   <!-- vgt_box_background_settings -->

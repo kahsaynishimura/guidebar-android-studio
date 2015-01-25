@@ -1,0 +1,315 @@
+/* reset the style */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	font-family: 'Helvetica Neue',Arial,Helvetica,sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* begin */
+#sq_body_container {
+	background: url(../../../../../common/site_bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	text-align: center;
+	margin: auto;
+	padding-top: 30px;
+	width: 100%;
+	color: #fff;
+}
+#sq_body_container * {
+	max-width: 100% !important;
+}
+#sq_body_container > div { 	display: inline-block; } 
+ #sq_above_head_img {
+	margin: auto;
+	text-align: center;
+	max-width: 100%;
+}
+
+#sq_below_bottom_img {
+	margin: auto;
+	text-align: center;
+	max-width: 100%;
+}
+
+#sq_body_container > div { 	display: inline-block; } 
+ #sq_above_head_img img, #sq_below_bottom_img img{
+	margin: auto;
+	max-width: 100%;
+}
+
+input:focus, input {
+	outline: none;
+}
+
+#extender {
+	padding: 0 0 30px;	
+}
+
+#divider {
+	margin: auto;
+}
+
+#sq_form_body {
+	background-image: url(imgs/body_bg.png);
+}
+
+#sq_body_container .privacy_commit img {
+	padding: 0 5px;
+}
+
+#footer_links li {
+	display: inline;
+	padding: 5px;
+}
+
+/* MEASUREMENT NORMAL */
+
+#sq_body_container .sq_facebook_connect {
+	display: block;
+	width: 250px;
+	height: 29px;
+	text-align: center;
+	margin: 10px auto 0;
+	background: url(../../../../../common/rect_fb.png) no-repeat;
+}
+
+
+#sq_box_container {
+	width: 520px;
+	margin: auto;
+	text-align: center;
+}
+
+#sq_form_head {
+	height: 25px;
+	width: 520px;
+	margin: auto;
+	background: url(imgs/head.png) no-repeat;
+}
+
+#sq_body_container #divider {
+	width: 420px;
+	height: 6px;
+	background: url(imgs/divider.png);
+}
+
+#sq_form_foot {
+	height: 25px;
+	width: 520px;
+	margin: auto;
+	background: url(imgs/foot.png) no-repeat;
+}
+
+#sq_body_container .sq_main_headline {
+	padding: 20px 40px 10px;
+	font-size: 40px;
+	text-align: center;
+	margin: auto;
+}
+
+#sq_body_container .sq_sub_headline {
+	padding: 10px 0px 10px;
+	width: 400px;
+	margin: auto;
+	font-size: 22px;
+	line-height: 25px;
+}
+
+#sq_body_container .sq_cta_text {
+	padding: 15px 45px 10px;
+	margin: auto;
+}
+
+#sq_body_container input[type="text"], #sq_body_container input[type="email"], #sq_body_container input[type="number"] {
+	display: block;
+	background: url(imgs/input.png) no-repeat 0 0 scroll transparent;
+	width: 400px;
+	height: 60px;
+	border: 0;
+	text-align: center;
+	font-size: 22px;
+	color: #a8a8a8; padding: 0;
+	margin: auto;
+	line-height: 60px;
+}
+
+#sq_body_container input[type="submit"], #sq_body_container input[type="button"], #sq_body_container input[type="image"] {
+	display: block;
+	background: url(imgs/submit.png) no-repeat 0 0 scroll transparent;
+	width: 296px;
+	height: 96px;
+	border: 0;
+	text-align: center;
+	font-size: 24px;
+	color: #2a2a2a;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	line-height: 96px;	
+	cursor: pointer;
+}
+
+#sq_body_container .privacy_commit {
+	font-size: 0.8em;
+	width: 400px;
+	margin: auto;
+}
+#footer_links {
+	margin-top: 10px;
+	font-size: 0.9em;
+	margin-bottom: 40px;
+	padding-bottom: 50px;
+}
+
+/* END MEASUREMENT NORMAL */
+
+/* 480 WIDTH MEASUREMENT NORMAL */
+@media (max-width: 480px)
+{
+	#sq_body_container img, #sq_body_container iframe
+	{
+		max-width: 95% !important;
+	}	
+	#sq_body_container .sq_facebook_connect {
+		display: block;
+		width: 144px;
+		height: 16px;
+		text-align: center;
+		margin: 5px auto 0;
+		background: url(../../../../../common/rect_fb.png) no-repeat;
+	}
+
+
+	#sq_box_container {
+		width: 300px;
+		margin: auto;
+		text-align: center;
+	}
+
+	#sq_form_head {
+		height: 14px;
+		width: 300px;
+		margin: auto;
+		background: url(imgs/480_head.png) no-repeat;
+	}
+
+	#sq_body_container #divider {
+		width: 242px;
+		height: 4px;
+		background: url(imgs/480_divider.png);
+	}
+	#sq_form_body {
+		background-image: url(imgs/480_body_bg.png);
+	}
+	#sq_form_foot {
+		height: 14px;
+		width: 300px;
+		margin: auto;
+		background: url(imgs/480_foot.png) no-repeat;
+	}
+
+	#sq_body_container .sq_main_headline {
+		padding: 10px 20px 5px;
+		font-size: 20px;
+		text-align: center;
+		margin: auto;
+	}
+
+	#sq_body_container .sq_sub_headline {
+		padding: 10px 0px 10px;
+		width: 231px;
+		margin: auto;
+		font-size: 12px;
+		line-height: 14px;
+	}
+
+	#sq_body_container .sq_cta_text {
+		padding: 8px 25px 5px;
+		margin: auto;
+		font-size: 12px;
+	}
+
+	#sq_body_container input[type="text"], #sq_body_container input[type="email"], #sq_body_container input[type="number"] {
+		display: block;
+		background: url(imgs/480_input.png) no-repeat 0 0 scroll transparent;
+		background-size: cover;
+		width: 231px;
+		height: 34px;
+		border: 0;
+		text-align: center;
+		font-size: 12px;
+		color: #a8a8a8; padding: 0;
+		margin: auto;
+		line-height: 34px;
+	}
+
+	#sq_body_container input[type="submit"], #sq_body_container input[type="button"], #sq_body_container input[type="image"] {
+		display: block;
+		background: url(imgs/480_submit.png) no-repeat 0 0 scroll transparent;
+		background-size: cover;
+		width: 170px;
+		height: 55px;
+		border: 0;
+		text-align: center;
+		font-size: 14px;
+		color: #2a2a2a;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 5px;
+		line-height: 55px;	
+		cursor: pointer;
+	}
+
+	#sq_body_container .privacy_commit {
+		font-size: 11px;
+		width: 231px;
+		margin: auto;
+	}
+	#footer_links {
+		margin-top: 10px;
+		font-size: 12px;
+		margin-bottom: 20px;
+		padding-bottom: 25px;
+	}
+}
+
+/* END 480 WIDTH MEASUREMENT NORMAL */

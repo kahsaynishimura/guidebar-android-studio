@@ -1,0 +1,52 @@
+.gallery_item {
+    width: 160px;
+    height: 86px;
+    float: left;
+    margin: 10px auto;
+    padding: 20px
+}
+
+.gallery_item img{
+    width: 150px;
+    height: 86px;
+}
+
+.install_status {
+    margin: auto;
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #eee;
+    text-align: center;
+}
+
+.reinstall
+{
+    background: #dfdfdf;
+    color: #222;
+    cursor: pointer;
+}
+
+.install
+{
+    background: #A3C3FF;
+    color: #09B000;
+    cursor: pointer;
+}
+
+#sq_gallery_loading {
+    
+    margin: 30px auto;
+    text-align: center;
+    width: 128px;
+    height: 128px;
+    display: none;
+    
+}
+
+#live_loading_gif {
+    width: 16px;
+    height: 11px;
+    margin: auto;
+    text-align: center;
+    
+}

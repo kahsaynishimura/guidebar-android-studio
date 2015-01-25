@@ -1,0 +1,9 @@
+#preview_vertical .social_btn{
+    display: block;
+    margin: 5px;
+    
+}
+
+#preview_vertical {
+    display: none;
+}

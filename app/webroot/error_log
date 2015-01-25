@@ -1,0 +1,45 @@
+[20-Oct-2014 21:44:05] PHP Fatal error:  [CakeException] Unknown status code
+#0 /home/guide456/public_html/lib/Cake/Error/ExceptionRenderer.php(215): CakeResponse->statusCode(111)
+#1 /home/guide456/public_html/lib/Cake/Error/ExceptionRenderer.php(178): ExceptionRenderer->error400(Object(SocketException))
+#2 /home/guide456/public_html/lib/Cake/Error/ErrorHandler.php(122): ExceptionRenderer->render(Array, Array)
+#3 [internal function]: ErrorHandler::handleException()
+#4 {main} in /home/guide456/public_html/lib/Cake/Error/ErrorHandler.php on line 131
+[20-Oct-2014 21:44:57] PHP Fatal error:  [CakeException] Unknown status code
+#0 /home/guide456/public_html/lib/Cake/Error/ExceptionRenderer.php(215): CakeResponse->statusCode(111)
+#1 /home/guide456/public_html/lib/Cake/Error/ExceptionRenderer.php(178): ExceptionRenderer->error400(Object(SocketException))
+#2 /home/guide456/public_html/lib/Cake/Error/ErrorHandler.php(122): ExceptionRenderer->render(Array, Array)
+#3 [internal function]: ErrorHandler::handleException()
+#4 {main} in /home/guide456/public_html/lib/Cake/Error/ErrorHandler.php on line 131
+[20-Oct-2014 22:06:50] PHP Fatal error:  [CakeException] Unknown status code
+#0 /home/guide456/public_html/lib/Cake/Error/ExceptionRenderer.php(215): CakeResponse->statusCode(45772136)
+#1 /home/guide456/public_html/lib/Cake/Error/ExceptionRenderer.php(178): ExceptionRenderer->error400(Object(SocketException))
+#2 /home/guide456/public_html/lib/Cake/Error/ErrorHandler.php(122): ExceptionRenderer->render(Array, Array)
+#3 [internal function]: ErrorHandler::handleException()
+#4 {main} in /home/guide456/public_html/lib/Cake/Error/ErrorHandler.php on line 131
+[20-Oct-2014 22:16:48] PHP Fatal error:  [CakeException] Unknown status code
+#0 /home/guide456/public_html/lib/Cake/Error/ExceptionRenderer.php(215): CakeResponse->statusCode(111)
+#1 /home/guide456/public_html/lib/Cake/Error/ExceptionRenderer.php(178): ExceptionRenderer->error400(Object(SocketException))
+#2 /home/guide456/public_html/lib/Cake/Error/ErrorHandler.php(122): ExceptionRenderer->render(Array, Array)
+#3 [internal function]: ErrorHandler::handleException()
+#4 {main} in /home/guide456/public_html/lib/Cake/Error/ErrorHandler.php on line 131
+[20-Oct-2014 22:20:05] PHP Fatal error:  [CakeException] Unknown status code
+#0 /home/guide456/public_html/lib/Cake/Error/ExceptionRenderer.php(215): CakeResponse->statusCode(111)
+#1 /home/guide456/public_html/lib/Cake/Error/ExceptionRenderer.php(178): ExceptionRenderer->error400(Object(SocketException))
+#2 /home/guide456/public_html/lib/Cake/Error/ErrorHandler.php(122): ExceptionRenderer->render(Array, Array)
+#3 [internal function]: ErrorHandler::handleException()
+#4 {main} in /home/guide456/public_html/lib/Cake/Error/ErrorHandler.php on line 131
+[20-Oct-2014 22:21:09] PHP Fatal error:  [CakeException] Unknown status code
+#0 /home/guide456/public_html/lib/Cake/Error/ExceptionRenderer.php(215): CakeResponse->statusCode(111)
+#1 /home/guide456/public_html/lib/Cake/Error/ExceptionRenderer.php(178): ExceptionRenderer->error400(Object(SocketException))
+#2 /home/guide456/public_html/lib/Cake/Error/ErrorHandler.php(122): ExceptionRenderer->render(Array, Array)
+#3 [internal function]: ErrorHandler::handleException()
+#4 {main} in /home/guide456/public_html/lib/Cake/Error/ErrorHandler.php on line 131
+[21-Oct-2014 13:39:05] PHP Parse error:  syntax error, unexpected ')' in /home/guide456/public_html/app/Controller/PurchasesController.php on line 293
+[11-Nov-2014 21:33:04] PHP Parse error:  syntax error, unexpected ';' in /home/guide456/public_html/app/View/Purchases/my_purchases.ctp on line 58
+[11-Nov-2014 21:33:08] PHP Parse error:  syntax error, unexpected ';' in /home/guide456/public_html/app/View/Purchases/my_purchases.ctp on line 58
+[12-Nov-2014 00:05:22] PHP Parse error:  syntax error, unexpected T_IF, expecting ';' or '{' in /home/guide456/public_html/app/Controller/PurchasesController.php on line 313
+[12-Nov-2014 00:07:20] PHP Parse error:  syntax error, unexpected T_IF in /home/guide456/public_html/app/Controller/PurchasesController.php on line 625
+[03-Dec-2014 13:09:29] PHP Fatal error:  Call to a member function find() on a non-object in /home/guide456/public_html/app/Controller/EventsController.php on line 152
+[03-Dec-2014 13:12:13] PHP Fatal error:  Call to a member function find() on a non-object in /home/guide456/public_html/app/Controller/EventsController.php on line 152
+[03-Dec-2014 13:17:42] PHP Fatal error:  Call to a member function find() on a non-object in /home/guide456/public_html/app/Controller/EventsController.php on line 152
+[05-Dec-2014 13:30:39] PHP Fatal error:  Call to a member function find() on a non-object in /home/guide456/public_html/app/Controller/EventsController.php on line 152

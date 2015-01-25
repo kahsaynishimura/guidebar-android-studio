@@ -1,0 +1,206 @@
+.vgt_transparent_black {
+    background: url("img/tblack.png");
+}
+
+.vgt_close_popup {
+    background: url(img/close.png) no-repeat;
+    width: 20px;
+    display: block;
+    height: 20px;
+    z-index: 9999999999999999;
+    cursor: pointer;
+    position: fixed;
+}
+
+strong, b {
+    font-weight: bold;
+}
+
+em, i {
+    font-style: italic;
+}
+
+[page_type=vgt_page] p{
+    margin-bottom: 0;
+}
+
+[page_type=vgt_page] *:after {
+    content: none !important;
+}
+
+[page_type=vgt_page] *:before {
+    content: none !important;
+}
+.vgt_transparent {
+
+}
+
+.vgt_popup_container_transparent {
+    display: none;
+    z-index: 999999;
+}
+
+.vgt_popup_container_front_end {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: scroll;
+    z-index: 999999;
+}
+
+.vgt_popup_container_transparent div[has_unique_class], .vgt_popup_container_front_end div[has_unique_class]{
+    z-index: 999999;
+}
+
+.vgt_top_left {
+    position: fixed !important;
+    top: 20px;
+    left: 20px;
+}
+
+.vgt_top_right {
+    position: fixed !important;
+    top: 20px;
+    left: 20px;
+}
+
+.vgt_top_center {
+    position: fixed !important;
+    top: 20px;
+    left: 50%;
+}
+.vgt_bottom_left {
+    position: fixed !important;
+    bottom: 20px;
+    left: 20px;
+}
+.vgt_bottom_right {
+    position: fixed !important;
+    bottom: 20px;
+    right: 20px;
+}
+
+.vgt_bottom_center {
+    position: fixed !important;
+    bottom: 20px;
+    left: 50%;
+}
+
+.vgt_screen_center {
+    position: fixed !important;
+    top: 50%;
+    left: 50%;
+}
+
+
+/* STYLING FOR TINYMCE LIST */
+[page_type] ul,[page_type] ol {
+    max-width: 90%;
+    text-align: left;
+    margin-left: 2% !important;
+
+}
+
+
+
+[page_type] ul.arrow_green li {
+    list-style-type: none;
+    background: url(img/arrow_green.png) no-repeat !important;
+    padding-left: 25px !important;
+}
+
+[page_type] ul.arrow_blue li {
+    list-style-type: none;
+    background: url(img/arrow_blue.png) no-repeat !important;
+    padding-left: 25px !important;
+}
+
+
+[page_type] ul.arrow_orange li {
+    list-style-type: none;
+    background: url(img/arrow_orange.png) no-repeat !important;
+    padding-left: 25px !important;
+}
+
+[page_type] ul.arrow_red li {
+    list-style-type: none;
+    background: url(img/arrow_red.png) no-repeat !important;
+    padding-left: 25px !important;
+}
+
+[page_type] ul.tick_green li {
+    list-style-type: none;
+    background: url(img/tick_green.png) no-repeat !important;
+    padding-left: 25px !important;
+}
+
+[page_type] ul.tick_blue li {
+    list-style-type: none;
+    background: url(img/tick_blue.png) no-repeat !important;
+    padding-left: 25px !important;
+}
+
+
+[page_type] ul.tick_orange li {
+    list-style-type: none;
+    background: url(img/tick_orange.png) no-repeat !important;
+    padding-left: 25px !important;
+}
+
+[page_type] ul.tick_red li {
+    list-style-type: none;
+    background: url(img/tick_red.png) no-repeat !important;
+    padding-left: 25px !important;
+}
+
+[page_type] ul.circle_green li {
+    list-style-type: none;
+    background: url(img/circle_green.png) no-repeat !important;
+    padding-left: 25px !important;
+}
+
+[page_type] ul.circle_blue li {
+    list-style-type: none;
+    background: url(img/circle_blue.png) no-repeat !important;
+    padding-left: 25px !important;
+}
+
+
+[page_type] ul.circle_orange li {
+    list-style-type: none;
+    background: url(img/circle_orange.png) no-repeat !important;
+    padding-left: 25px !important;
+}
+
+[page_type] ul.circle_red li {
+    list-style-type: none;
+    background: url(img/circle_red.png) no-repeat !important;
+    padding-left: 25px !important;
+}
+
+/* ADDITIONAL PARTS TO FORM */
+.vgt_form_notification {
+    text-align: center;
+    margin: auto;
+    max-width: 100%;
+}
+.vgt_form_messages {
+    display: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+    max-width: 100%;
+    color: #fff;
+}
+
+.vgt_notification_success {
+    background-color: #7ad5ff;
+}
+
+.vgt_notification_missing {
+    background-color: #ff7a93;
+}
+
